@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.mp3
+*.wav
+*.zip
+*.e8chakra.json
+analysis-output.json
