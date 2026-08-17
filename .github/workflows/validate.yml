@@ -17,5 +17,7 @@ jobs:
           python-version: "3.12"
       - name: Validate JSON metadata and chronology
         run: python scripts/validate_metadata.py
+      - name: Validate with optimized Python
+        run: python -O scripts/validate_metadata.py
       - name: Compile Python utilities
         run: python -m py_compile scripts/validate_metadata.py analysis/audio_probe.py
