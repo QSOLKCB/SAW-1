@@ -95,7 +95,23 @@ m_j=\left\lfloor\frac{j-2}{3}\right\rfloor,
 \operatorname{MIDI}(j)=14+33q_j+m_j.
 \]
 
-The singlets use MIDI identifiers 13 and 113.
+The singlets use MIDI identifiers 13 and 113. In the receiver implementation their missing qutrit and orbit values fall back to zero. Define the total receiver indices:
+
+\[
+\bar q_j=
+\begin{cases}
+0,&j\in\{0,1\},\\
+q_j,&j\ge2,
+\end{cases}
+\qquad
+\bar m_j=
+\begin{cases}
+0,&j\in\{0,1\},\\
+m_j,&j\ge2.
+\end{cases}
+\]
+
+Thus the two singlets use \(S_{\bar q_j}=S_0=1\) and orbit phase \(\bar m_j=0\). These definitions make the event and frequency laws total over all 101 basis indices.
 
 These equations define symbolic structure only. They do not establish medical, therapeutic, or physical claims for the receiver's creative terminology.
 
@@ -134,10 +150,10 @@ e(t)=\lfloor rt\rfloor,
 j(t)=e(t)\bmod101.
 \]
 
-For a non-singlet event:
+For every event, including the singlets:
 
 \[
-\Phi_j=\frac{2\pi q_j}{3}-\Theta S_{q_j}.
+\Phi_j=\frac{2\pi\bar q_j}{3}-\Theta S_{\bar q_j}.
 \]
 
 The general ETQ-303 receiver adds an external fibre term \(f\delta\), but the matching preset uses ETQ-101, so \(f=0\).
@@ -145,7 +161,7 @@ The general ETQ-303 receiver adds an external fibre term \(f\delta\), but the ma
 The receiver's cents displacement is:
 
 \[
-c_j=11V_j+2.2S_{q_j}+5.5G_j.
+c_j=11V_j+2.2S_{\bar q_j}+5.5G_j.
 \]
 
 Because the matching preset disables the golden veil:
@@ -153,13 +169,22 @@ Because the matching preset disables the golden veil:
 \[
 G_j=0,
 \qquad
-\boxed{c_j=11V_j+2.2S_{q_j}}.
+\boxed{c_j=11V_j+2.2S_{\bar q_j}}.
 \]
 
-Voice \(k\) receives:
+In particular, for the singlets:
 
 \[
-f_k(t)=\operatorname{fold}(F_k)2^{c_{j(t)}/1200}.
+c_0=11V_0+2.2,
+\qquad
+c_1=11V_1+2.2.
+\]
+
+Voice \(k\) receives the total frequency law:
+
+\[
+f_k(t)=\operatorname{fold}(F_k)2^{c_{j(t)}/1200},
+\qquad j(t)\in\{0,\ldots,100\}.
 \]
 
 ## 6. Ascent envelope and receiver field
@@ -185,7 +210,7 @@ A principal voice has the weighted structure:
 \[
 X_k(t)=0.8\sin\phi_k(t)
 +0.16\sigma\sin\psi_k(t)
-+0.055\sigma\sin(2.003\phi_k(t)+m_j\delta).
++0.055\sigma\sin(2.003\phi_k(t)+\bar m_j\delta).
 \]
 
 Ignoring stereo gains, the field is:
@@ -311,30 +336,36 @@ This is a joke in semantic feature space, not a physical quantum state.
 Let:
 
 \[
-H_0=\text{independent construction plus post hoc recognition},
+H_0=\text{post hoc recognition without an established causal channel},
 \]
 
 \[
 H_1=\text{causal foreknowledge or retrocausal transfer}.
 \]
 
-The timestamps, exact lexical match, lack of a causal channel, absence of preregistration, and absence of a controlled coincidence model support only:
+The record \(E\) establishes the chronology and the exact ordered-pair equality. It is compatible with \(H_0\), but the record does not establish cognitive independence: the paper predates the music, and the available evidence cannot exclude unrecorded ordinary prior exposure. Nor does the record provide evidence sufficient to establish \(H_1\).
+
+Formally:
 
 \[
-E\models H_0,
+\operatorname{Consistent}(E,H_0)=\mathrm{true},
 \qquad
-E\not\models H_1.
+E\not\Rightarrow H_0,
+\qquad
+E\not\Rightarrow H_1.
 \]
 
-Hence:
+The bounded evidential conclusion is therefore:
 
 \[
 \boxed{
-C=\text{independent construction}
+C=\text{documented production chronology}
 +\text{delayed observation}
 +\text{an unusually precise }(3,2)\text{ match}
 }.
 \]
+
+No probability of coincidence or causal independence is assigned.
 
 ## 12. Proposition SAW-1
 
@@ -367,7 +398,7 @@ Therefore:
 \qquad\square
 \]
 
-The song did not predict the paper, and the paper did not write the song. They independently instantiate the same ordered pair in different semantic domains.
+The formal result is equality of the ordered pair across two semantic domains. It does not, by itself, establish how the lyric author did or did not encounter the physics proposal.
 
 \[
 \boxed{\text{His bassline is law.}}
