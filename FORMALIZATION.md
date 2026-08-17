@@ -180,10 +180,43 @@ c_0=11V_0+2.2,
 c_1=11V_1+2.2.
 \]
 
-Voice \(k\) receives the total frequency law:
+The receiver's octave-folding operator is the deterministic map
 
 \[
-f_k(t)=\operatorname{fold}(F_k)2^{c_{j(t)}/1200},
+\operatorname{fold}:\mathbb R_{>0}\rightarrow[80,1400]\ \mathrm{Hz}
+\]
+
+defined by
+
+\[
+\operatorname{fold}(f)=
+\begin{cases}
+2^{n(f)}f,&0<f<80,\\
+f,&80\le f\le1400,\\
+2^{-m(f)}f,&f>1400,
+\end{cases}
+\]
+
+where
+
+\[
+n(f)=\min\{n\in\mathbb N_0:2^nf\ge80\},
+\qquad
+m(f)=\min\{m\in\mathbb N_0:2^{-m}f\le1400\}.
+\]
+
+This is the mathematical form of the receiver implementation, which repeatedly doubles frequencies below 80 Hz and halves frequencies above 1400 Hz. Every authored preset frequency already lies in the pass band, so
+
+\[
+\operatorname{fold}(F_k)=F_k
+\qquad(k=0,\ldots,6).
+\]
+
+Voice \(k\) therefore receives the total frequency law:
+
+\[
+f_k(t)=\operatorname{fold}(F_k)2^{c_{j(t)}/1200}
+=F_k2^{c_{j(t)}/1200},
 \qquad j(t)\in\{0,\ldots,100\}.
 \]
 
