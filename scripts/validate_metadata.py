@@ -7,47 +7,153 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
+EXPECTED_TIMESTAMPS = {
+    "reference-track": "2026-07-27T09:24:54.574Z",
+    "industrial-metal-god": "2026-07-27T10:15:19Z",
+}
+EXPECTED_HASHES = {
+    "source-lab-private-archive": "6b12eb900de306cc179c94860e614abd291a629d91b5fe8d04989253194abe0a",
+    "reference-track": "109ffa7a2254b14f5b98f1a11f599880b3a44669b5d919ac0ba3984d16162583",
+    "industrial-metal-god": "7be48bec0f090d25b9353a1767c37164e926d186fccb5686e622c703cfa6de8a",
+}
+EXPECTED_ARTIFACT_IDS = {
+    "source-lab-private-archive",
+    "reference-track",
+    "industrial-metal-god",
+    "pettini-arxiv-v2",
+    "hossenfelder-video",
+}
+EXPECTED_RELATIONS = {
+    (
+        "source-lab-private-archive",
+        "supplies-symbolic-and-receiver-basis-for",
+        "reference-track",
+    ),
+    (
+        "reference-track",
+        "user-reported-cover-reference-for",
+        "industrial-metal-god",
+    ),
+    (
+        "industrial-metal-god",
+        "contains-exact-semantic-correspondence-with",
+        "pettini-arxiv-v2",
+    ),
+    (
+        "hossenfelder-video",
+        "prompted-later-recognition-of",
+        "industrial-metal-god",
+    ),
+}
 
 
-def load_json(relative: str):
+def load_json(relative: str) -> Any:
     with (ROOT / relative).open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        raise ValueError(message)
+
+
+def parse_utc(value: str, artifact_id: str) -> datetime:
+    require(value.endswith("Z"), f"{artifact_id} createdUtc must end with Z")
+    try:
+        parsed = datetime.fromisoformat(value.removesuffix("Z") + "+00:00")
+    except ValueError as exc:
+        raise ValueError(f"invalid createdUtc for {artifact_id}: {value}") from exc
+    require(parsed.utcoffset() is not None, f"{artifact_id} createdUtc must be timezone-aware")
+    return parsed
 
 
 def main() -> None:
     manifest = load_json("artifacts/manifest.json")
     zenodo = load_json(".zenodo.json")
 
-    assert manifest["schema"] == "qsol-imc-saw-1-artifact-manifest/1"
-    assert manifest["project"]["version"] == "1.0.0"
-    assert zenodo["version"] == "1.0.0"
-    assert zenodo["publication_type"] == "technicalnote"
+    require(
+        manifest.get("schema") == "qsol-imc-saw-1-artifact-manifest/1",
+        "unexpected artifact manifest schema",
+    )
+    require(manifest.get("project", {}).get("id") == "SAW-1", "unexpected project ID")
+    require(
+        manifest.get("project", {}).get("version") == "1.0.0",
+        "unexpected manifest project version",
+    )
+    require(zenodo.get("version") == "1.0.0", "unexpected Zenodo version")
+    require(
+        zenodo.get("publication_type") == "technicalnote",
+        "Zenodo publication_type must be technicalnote",
+    )
 
-    times = []
-    identifiers = set()
-    for artifact in manifest["artifacts"]:
-        artifact_id = artifact["id"]
-        assert artifact_id not in identifiers, artifact_id
-        identifiers.add(artifact_id)
+    artifacts = manifest.get("artifacts")
+    require(isinstance(artifacts, list), "manifest artifacts must be a list")
+
+    by_id: dict[str, dict[str, Any]] = {}
+    for artifact in artifacts:
+        require(isinstance(artifact, dict), "each artifact must be an object")
+        artifact_id = artifact.get("id")
+        require(isinstance(artifact_id, str), "every artifact must have a string ID")
+        require(artifact_id not in by_id, f"duplicate artifact ID: {artifact_id}")
+        by_id[artifact_id] = artifact
+
         if "sha256" in artifact:
-            assert SHA256.fullmatch(artifact["sha256"]), artifact_id
-        if "createdUtc" in artifact:
-            times.append(
-                datetime.fromisoformat(artifact["createdUtc"].replace("Z", "+00:00"))
+            digest = artifact["sha256"]
+            require(
+                isinstance(digest, str) and SHA256.fullmatch(digest) is not None,
+                f"invalid SHA-256 syntax for {artifact_id}",
             )
 
-    assert len(times) == 2
-    assert abs((max(times) - min(times)).total_seconds() - 3024.426) < 0.001
+    require(set(by_id) == EXPECTED_ARTIFACT_IDS, "artifact ID set differs from canonical manifest")
 
-    for relation in manifest["relations"]:
-        assert relation["subject"] in identifiers
-        assert relation["object"] in identifiers
+    for artifact_id, expected_hash in EXPECTED_HASHES.items():
+        require(
+            by_id[artifact_id].get("sha256") == expected_hash,
+            f"canonical SHA-256 changed for {artifact_id}",
+        )
+
+    parsed_times: dict[str, datetime] = {}
+    for artifact_id, expected_timestamp in EXPECTED_TIMESTAMPS.items():
+        actual_timestamp = by_id[artifact_id].get("createdUtc")
+        require(
+            actual_timestamp == expected_timestamp,
+            f"canonical createdUtc changed for {artifact_id}: "
+            f"expected {expected_timestamp}, got {actual_timestamp}",
+        )
+        parsed_times[artifact_id] = parse_utc(expected_timestamp, artifact_id)
+
+    reference_time = parsed_times["reference-track"]
+    song_time = parsed_times["industrial-metal-god"]
+    require(reference_time < song_time, "reference track must precede final song")
+    require(
+        abs((song_time - reference_time).total_seconds() - 3024.426) < 0.001,
+        "reference-to-song interval is not 3024.426 seconds",
+    )
+
+    relations = manifest.get("relations")
+    require(isinstance(relations, list), "manifest relations must be a list")
+    actual_relations: set[tuple[str, str, str]] = set()
+    for relation in relations:
+        require(isinstance(relation, dict), "each relation must be an object")
+        subject = relation.get("subject")
+        predicate = relation.get("predicate")
+        object_id = relation.get("object")
+        require(subject in by_id, f"unknown relation subject: {subject}")
+        require(object_id in by_id, f"unknown relation object: {object_id}")
+        require(isinstance(predicate, str), "relation predicate must be a string")
+        actual_relations.add((subject, predicate, object_id))
+
+    require(actual_relations == EXPECTED_RELATIONS, "relation set differs from canonical manifest")
 
     print("SAW-1 metadata validation passed")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"SAW-1 metadata validation failed: {exc}") from exc
