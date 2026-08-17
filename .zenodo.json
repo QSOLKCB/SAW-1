@@ -1,0 +1,34 @@
+{
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "publication_date": "2026-08-18",
+  "title": "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence",
+  "creators": [
+    {
+      "name": "Slade, Trent",
+      "affiliation": "QSOL-IMC"
+    }
+  ],
+  "description": "SAW-1 documents an ETQ-101-informed generative music chain and the later recognition that the lyric ‘Three beats to two’ exactly reproduces the ordered dimensional signature (3,2) of a separately authored extra-time entanglement proposal. It distinguishes deterministic source geometry, generative audio transformation, exact numerical correspondence, interpretive analogy, and unsupported causal claims.",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "language": "eng",
+  "keywords": [
+    "sonification",
+    "ETQ-101",
+    "E8",
+    "industrial metal",
+    "semantic correspondence",
+    "quantum foundations",
+    "extra time dimension",
+    "provenance",
+    "Spooky Action at Work"
+  ],
+  "references": [
+    "Marco Pettini (2026), Quantum Entanglement Beyond Kinematics: A Dynamical Hypothesis in (3,2)-Dimensional Spacetime, arXiv:2606.12457v2.",
+    "Sabine Hossenfelder (2026), Spooky Action At Distance Comes from Second Time Dimension, Physicist Claims, YouTube.",
+    "Trent Slade (2026), Industrial Metal God, YouTube and Spotify."
+  ],
+  "notes": "The private E8 Chakra Vortexmouth Lab source archive and the two evidence MP3 files are not included in the deposit. Their SHA-256 hashes and bounded metadata are recorded for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material."
+}
