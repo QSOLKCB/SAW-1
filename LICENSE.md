@@ -1,29 +1,37 @@
-# Rights and Licensing
+# Rights and Licensing Map
 
-## Technical note and repository metadata
+SAW-1 contains different classes of material. The existing root [`LICENSE`](LICENSE) remains authoritative for repository software.
 
-Except where a narrower boundary is stated below, the original SAW-1 technical note, explanatory Markdown, metadata, and validation scripts in this repository are licensed under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**.
+## Software and scripts — MPL-2.0
+
+The Python utilities, workflow definitions, and other source-code files are licensed under the **Mozilla Public License 2.0**, as supplied in the root `LICENSE` file.
+
+SPDX identifier: `MPL-2.0`
+
+## Technical note and metadata — CC BY 4.0
+
+The original SAW-1 technical note, explanatory Markdown, artifact metadata, measurements, and citation metadata are licensed under the **Creative Commons Attribution 4.0 International licence**.
 
 SPDX identifier: `CC-BY-4.0`
 
-A copy of the licence is available at:
+Licence text: https://creativecommons.org/licenses/by/4.0/
 
-https://creativecommons.org/licenses/by/4.0/
-
-Attribution should identify:
+Suggested attribution:
 
 > Trent Slade / QSOL-IMC, *SAW-1 — Spooky Action at Work*, version 1.0.0 (2026).
 
+The Zenodo record describes the primary deposited object as a CC BY 4.0 technical note. The presence of MPL-2.0 utility code does not relicense the technical note.
+
 ## Excluded materials
 
-The following are **not** distributed under this repository licence:
+The following are not distributed or relicensed by SAW-1:
 
 - `E8 Chakra Vortexmouth Sonification Lab · RX-01` source code and private archive;
 - the recordings `Custom_Chakra_Field_ETQ-101_CHAKRA-ASCENT-101` and `Industrial Metal God`;
-- the complete lyrics of `Industrial Metal God` beyond the limited excerpts used for analysis;
+- the complete lyrics of `Industrial Metal God` beyond limited analytical excerpts;
 - third-party papers, videos, platform pages, names, marks, and linked materials.
 
-Those materials remain subject to their respective rights and terms. Their identifiers, hashes, short excerpts, and factual metadata are included for research provenance and commentary only.
+Their identifiers, hashes, short excerpts, and factual metadata are included only for research provenance and commentary.
 
 ## No warranty
 
