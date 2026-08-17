@@ -1,0 +1,16 @@
+[
+  {
+    "person_or_org": {
+      "type": "organizational",
+      "name": "OpenAI ChatGPT (GPT-5.6 Thinking)"
+    },
+    "role": {
+      "id": "other"
+    },
+    "affiliations": [
+      {
+        "name": "OpenAI"
+      }
+    ]
+  }
+]
