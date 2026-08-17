@@ -11,6 +11,8 @@ from pathlib import Path
 
 import numpy as np
 
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_MANIFEST = ROOT / "artifacts" / "manifest.json"
 SR = 48_000
 WINDOW = 2.0
 
@@ -21,6 +23,22 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1 << 20), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def load_expected_hashes(manifest_path: Path) -> dict[str, str]:
+    with manifest_path.open("r", encoding="utf-8") as handle:
+        manifest = json.load(handle)
+
+    artifacts = {artifact["id"]: artifact for artifact in manifest["artifacts"]}
+    expected: dict[str, str] = {}
+    for artifact_id in ("reference-track", "industrial-metal-god"):
+        try:
+            expected[artifact_id] = artifacts[artifact_id]["sha256"]
+        except KeyError as exc:
+            raise ValueError(
+                f"manifest is missing canonical SHA-256 for {artifact_id}"
+            ) from exc
+    return expected
 
 
 def decode(path: Path) -> np.ndarray:
@@ -64,13 +82,27 @@ def measure(samples: np.ndarray, centre: float) -> dict[str, float]:
     }
 
 
-def analyse(path: Path, centres: list[float]) -> dict:
+def analyse(
+    path: Path,
+    centres: list[float],
+    *,
+    artifact_id: str,
+    expected_sha256: str,
+) -> dict:
+    actual_sha256 = sha256(path)
+    if actual_sha256 != expected_sha256:
+        raise ValueError(
+            f"{artifact_id} SHA-256 mismatch for {path}: "
+            f"expected {expected_sha256}, got {actual_sha256}"
+        )
+
     samples = decode(path)
     return {
+        "artifact_id": artifact_id,
         "file": {
             "name": path.name,
             "bytes": path.stat().st_size,
-            "sha256": sha256(path),
+            "sha256": actual_sha256,
         },
         "decode": {
             "sample_rate_hz": SR,
@@ -89,16 +121,37 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("reference", type=Path)
     parser.add_argument("song", type=Path)
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        default=DEFAULT_MANIFEST,
+        help="artifact manifest containing canonical evidence hashes",
+    )
     args = parser.parse_args()
-    for path in (args.reference, args.song):
+    for path in (args.reference, args.song, args.manifest):
         if not path.is_file():
             parser.error(f"file not found: {path}")
 
-    result = {
-        "schema": "qsol-imc-saw-1-audio-probe/1",
-        "reference": analyse(args.reference, [15.0, 45.0, 75.0]),
-        "song": analyse(args.song, [30.0, 90.0, 150.0, 210.0]),
-    }
+    try:
+        expected = load_expected_hashes(args.manifest)
+        result = {
+            "schema": "qsol-imc-saw-1-audio-probe/1",
+            "reference": analyse(
+                args.reference,
+                [15.0, 45.0, 75.0],
+                artifact_id="reference-track",
+                expected_sha256=expected["reference-track"],
+            ),
+            "song": analyse(
+                args.song,
+                [30.0, 90.0, 150.0, 210.0],
+                artifact_id="industrial-metal-god",
+                expected_sha256=expected["industrial-metal-god"],
+            ),
+        }
+    except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
+        parser.error(str(exc))
+
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
