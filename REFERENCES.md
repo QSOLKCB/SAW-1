@@ -51,6 +51,6 @@ The archive was inspected solely to document the sonification basis. It is not i
 ## Creator and AI-assistance disclosure
 
 - [`provenance/TRENT_SLADE_ZENODO_PROVENANCE.json`](provenance/TRENT_SLADE_ZENODO_PROVENANCE.json) identifies Trent Slade as the human creator, accountable author, QSOL-IMC affiliate, and ORCID holder.
-- [`provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json`](provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json) records the bounded assistance supplied by OpenAI ChatGPT (GPT-5.6 Thinking).
+- [`provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json`](provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json) records the bounded assistance supplied by OpenAI ChatGPT (GPT-5.6 Sol).
 
 The AI system is disclosed as a contributor and tool, not as a human author, legal person, ORCID holder, rights holder, or independently accountable research subject.
