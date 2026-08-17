@@ -1,11 +1,14 @@
 # SAW-1 — Spooky Action at Work
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21984110.svg)](https://doi.org/10.5281/zenodo.21984110)
+
 **A lightweight formalization of ETQ-101 sonification, industrial transformation, and an accidental \((3,2)\) correspondence.**
 
 **Author:** Trent Slade · QSOL-IMC  
 **Version:** 1.0.0  
-**Status:** Release candidate  
-**Primary object:** Technical note
+**Status:** Released  
+**Primary object:** Technical note  
+**Zenodo DOI:** `10.5281/zenodo.21984110`
 
 ## Abstract
 
@@ -63,6 +66,10 @@ The paper predates the music. SAW-1 formalizes the **later recognition** of the 
 - [`artifacts/manifest.json`](artifacts/manifest.json) — hashes, durations, timestamps, and external identifiers.
 - [`analysis/audio_probe.py`](analysis/audio_probe.py) — reproducible local spectral probe for supplied audio.
 - [`analysis/MEASUREMENTS.md`](analysis/MEASUREMENTS.md) — measured audio observations.
+- [`provenance/TRENT_SLADE_ZENODO_PROVENANCE.json`](provenance/TRENT_SLADE_ZENODO_PROVENANCE.json) — human creator, ORCID, roles, rights, and final accountability.
+- [`provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json`](provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json) — bounded AI-assistance disclosure and non-authorship statement.
+- [`zenodo-import/ZENODO_AUTHORS_CREATORS_TRENT_SLADE.json`](zenodo-import/ZENODO_AUTHORS_CREATORS_TRENT_SLADE.json) — direct Zenodo Authors/Creators importer array.
+- [`zenodo-import/ZENODO_CONTRIBUTORS_CHATGPT_GPT-5.6.json`](zenodo-import/ZENODO_CONTRIBUTORS_CHATGPT_GPT-5.6.json) — direct Zenodo Contributors importer array.
 - [`REFERENCES.md`](REFERENCES.md) — primary and contextual references.
 - [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) — tagging and Zenodo steps.
 
@@ -99,7 +106,11 @@ The script decodes to mono float32 at 48 kHz, calculates fixed-window power-spec
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Its supported top-level work type describes the repository software, while `preferred-citation` represents the technical note. After the first Zenodo archive is minted, add the concept DOI badge and DOI identifier in a metadata-only follow-up release.
+**Version DOI:** https://doi.org/10.5281/zenodo.21984110
+
+The DOI was reserved for the SAW-1 v1.0.0 Zenodo record. See [`CITATION.cff`](CITATION.cff) for the preferred technical-note citation and repository-software metadata.
+
+Trent Slade is the cited human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is separately disclosed as an AI assistance system and contributor, not a human author or rights holder.
 
 ## Rights
 

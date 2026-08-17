@@ -4,11 +4,13 @@ title: "SAW-1 — Spooky Action at Work"
 type: software
 version: 1.0.0
 date-released: 2026-08-18
+doi: 10.5281/zenodo.21984110
 license: MPL-2.0
 authors:
   - family-names: Slade
     given-names: Trent
     affiliation: QSOL-IMC
+    orcid: "https://orcid.org/0009-0002-4515-9237"
 abstract: >-
   SAW-1 documents an ETQ-101-informed generative music chain and the later
   recognition that the lyric "Three beats to two" exactly reproduces the
@@ -26,7 +28,8 @@ keywords:
   - extra time dimension
   - provenance
 repository-code: "https://github.com/QSOLKCB/SAW-1"
-url: "https://github.com/QSOLKCB/SAW-1"
+repository-artifact: "https://github.com/QSOLKCB/SAW-1/releases/tag/v1.0.0"
+url: "https://doi.org/10.5281/zenodo.21984110"
 preferred-citation:
   type: article
   title: "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence"
@@ -34,7 +37,9 @@ preferred-citation:
     - family-names: Slade
       given-names: Trent
       affiliation: QSOL-IMC
+      orcid: "https://orcid.org/0009-0002-4515-9237"
   year: 2026
   month: 8
   version: 1.0.0
-  url: "https://github.com/QSOLKCB/SAW-1"
+  doi: 10.5281/zenodo.21984110
+  url: "https://doi.org/10.5281/zenodo.21984110"

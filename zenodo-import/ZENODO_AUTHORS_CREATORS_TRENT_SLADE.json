@@ -1,0 +1,20 @@
+[
+  {
+    "person_or_org": {
+      "type": "personal",
+      "family_name": "Slade",
+      "given_name": "Trent",
+      "identifiers": [
+        {
+          "scheme": "orcid",
+          "identifier": "0009-0002-4515-9237"
+        }
+      ]
+    },
+    "affiliations": [
+      {
+        "name": "QSOL-IMC"
+      }
+    ]
+  }
+]

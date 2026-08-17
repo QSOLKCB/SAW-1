@@ -1,0 +1,63 @@
+{
+  "schema": "qsol-imc-ai-assistance-disclosure/1",
+  "record": {
+    "project_id": "SAW-1",
+    "project_title": "Spooky Action at Work",
+    "version": "1.0.0",
+    "doi": "10.5281/zenodo.21984110",
+    "repository": "https://github.com/QSOLKCB/SAW-1",
+    "release": "https://github.com/QSOLKCB/SAW-1/releases/tag/v1.0.0",
+    "publication_date": "2026-08-18"
+  },
+  "ai_system": {
+    "type": "artificial-intelligence-system",
+    "product": "ChatGPT",
+    "model": "GPT-5.6 Sol",
+    "provider": "OpenAI",
+    "human_person": false,
+    "orcid": null,
+    "persistent_person_identity_claimed": false
+  },
+  "suggested_zenodo_contributor_object": {
+    "person_or_org": {
+      "type": "organizational",
+      "name": "OpenAI ChatGPT (GPT-5.6 Sol)"
+    },
+    "role": {
+      "id": "other"
+    },
+    "affiliations": [
+      {
+        "name": "OpenAI"
+      }
+    ]
+  },
+  "contribution_classification": {
+    "included_as_creator_or_author": false,
+    "included_in_academic_citation": false,
+    "recommended_zenodo_placement": "Contributor or uploaded AI-assistance disclosure file",
+    "recommended_contributor_role": "Other",
+    "human_supervisor": "Trent Slade"
+  },
+  "contributions": [
+    "Helped translate the user's concept into a bounded mathematical formalization.",
+    "Drafted and revised repository documentation and machine-readable metadata.",
+    "Developed reproducibility and provenance-validation utilities.",
+    "Analyzed supplied audio artifacts and source material under the user's direction.",
+    "Addressed automated review findings and hardened validation behavior.",
+    "Prepared Zenodo, citation, DOI, and release metadata."
+  ],
+  "limitations_and_boundaries": [
+    "The AI system is not a human author, legal person, rights holder, or accountable research subject.",
+    "The AI system cannot hold an ORCID or independently accept responsibility for the publication.",
+    "All outputs were selected, reviewed, tested, edited, merged, and released under Trent Slade's human oversight.",
+    "The disclosure does not transfer authorship, copyright, or accountability from the human creator.",
+    "Model outputs may contain errors and are not evidence independent of the archived artifacts and cited sources."
+  ],
+  "claim_boundary": {
+    "physical_entanglement_claimed": false,
+    "retrocausality_claimed": false,
+    "prophecy_claimed": false,
+    "established_second_time_dimension_claimed": false
+  }
+}

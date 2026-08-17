@@ -1,0 +1,72 @@
+{
+  "schema": "qsol-imc-zenodo-person-provenance/1",
+  "record": {
+    "project_id": "SAW-1",
+    "project_title": "Spooky Action at Work",
+    "version": "1.0.0",
+    "doi": "10.5281/zenodo.21984110",
+    "repository": "https://github.com/QSOLKCB/SAW-1",
+    "release": "https://github.com/QSOLKCB/SAW-1/releases/tag/v1.0.0",
+    "publication_date": "2026-08-18"
+  },
+  "entity": {
+    "type": "human",
+    "name": "Trent Slade",
+    "citation_name": "Slade, Trent",
+    "given_name": "Trent",
+    "family_name": "Slade",
+    "affiliation": "QSOL-IMC",
+    "orcid": "0009-0002-4515-9237",
+    "orcid_url": "https://orcid.org/0009-0002-4515-9237",
+    "github": "QSOLKCB",
+    "github_url": "https://github.com/QSOLKCB"
+  },
+  "zenodo_creator_object": {
+    "person_or_org": {
+      "type": "personal",
+      "given_name": "Trent",
+      "family_name": "Slade",
+      "name": "Slade, Trent",
+      "identifiers": [
+        {
+          "scheme": "orcid",
+          "identifier": "0009-0002-4515-9237"
+        }
+      ]
+    },
+    "affiliations": [
+      {
+        "name": "QSOL-IMC"
+      }
+    ]
+  },
+  "roles": [
+    "Author",
+    "Conceptualization",
+    "Source artifact creator",
+    "Music and lyric creator",
+    "Methodology",
+    "Project administration",
+    "Validation",
+    "Rights holder",
+    "Final human accountability"
+  ],
+  "contributions": [
+    "Created the ETQ-101-informed source and reference-track workflow.",
+    "Created Industrial Metal God and its lyric set.",
+    "Identified the later (3,2) semantic correspondence.",
+    "Defined the intended scope, humour, claim boundaries, and publication purpose.",
+    "Reviewed, tested, merged, tagged, and released the SAW-1 repository.",
+    "Retains final responsibility for the accuracy and publication of the record."
+  ],
+  "authorship_statement": {
+    "is_human_author": true,
+    "included_in_academic_citation": true,
+    "accepts_accountability": true
+  },
+  "rights": {
+    "technical_note_and_metadata": "CC-BY-4.0",
+    "software": "MPL-2.0",
+    "excluded_private_and_audio_material": "Copyright Trent Slade / QSOL-IMC"
+  }
+}
