@@ -12,7 +12,7 @@
   ],
   "contributors": [
     {
-      "name": "OpenAI ChatGPT (GPT-5.6 Thinking)",
+      "name": "OpenAI ChatGPT (GPT-5.6 Sol)",
       "affiliation": "OpenAI",
       "type": "Other"
     }
@@ -40,5 +40,5 @@
     "Trent Slade (2026), Industrial Metal God, YouTube and Spotify.",
     "SAW-1 v1.0.0 reserved version DOI: 10.5281/zenodo.21984110."
   ],
-  "notes": "The private E8 Chakra Vortexmouth Lab source archive and the two evidence MP3 files are not included in the repository deposit. Their SHA-256 hashes and bounded metadata are recorded for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material. Trent Slade is the sole human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Thinking) is disclosed as an AI assistance system and contributor, not a human author or rights holder."
+  "notes": "The private E8 Chakra Vortexmouth Lab source archive and the two evidence MP3 files are not included in the repository deposit. Their SHA-256 hashes and bounded metadata are recorded for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material. Trent Slade is the sole human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is disclosed as an AI assistance system and contributor, not a human author or rights holder."
 }
