@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use or discuss SAW-1, please cite this technical note."
+title: "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence"
+type: article
+version: 1.0.0
+date-released: 2026-08-18
+license: CC-BY-4.0
+authors:
+  - family-names: Slade
+    given-names: Trent
+    affiliation: QSOL-IMC
+abstract: >-
+  SAW-1 documents an ETQ-101-informed generative music chain and the later
+  recognition that the lyric "Three beats to two" exactly reproduces the
+  ordered dimensional signature (3,2) of a separately authored extra-time
+  entanglement proposal. The note distinguishes deterministic source geometry,
+  generative audio transformation, exact numerical correspondence, interpretive
+  analogy, and unsupported causal claims.
+keywords:
+  - sonification
+  - ETQ-101
+  - E8
+  - industrial metal
+  - semantic correspondence
+  - quantum foundations
+  - extra time dimension
+  - provenance
+repository-code: "https://github.com/QSOLKCB/SAW-1"
+url: "https://github.com/QSOLKCB/SAW-1"
