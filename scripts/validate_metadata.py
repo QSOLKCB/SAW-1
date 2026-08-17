@@ -5,12 +5,14 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime
+from datetime import date, datetime, time, timezone
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
+EXPECTED_PAPER_DATE = "2026-06-25"
+EXPECTED_DOCUMENTATION_DATE = "2026-08-18"
 EXPECTED_TIMESTAMPS = {
     "reference-track": "2026-07-27T09:24:54.574Z",
     "industrial-metal-god": "2026-07-27T10:15:19Z",
@@ -27,28 +29,32 @@ EXPECTED_ARTIFACT_IDS = {
     "pettini-arxiv-v2",
     "hossenfelder-video",
 }
-EXPECTED_RELATIONS = {
+EXPECTED_RELATIONS = (
     (
         "source-lab-private-archive",
         "supplies-symbolic-and-receiver-basis-for",
         "reference-track",
+        "provenance-bounded",
     ),
     (
         "reference-track",
         "user-reported-cover-reference-for",
         "industrial-metal-god",
+        "user-supplied",
     ),
     (
         "industrial-metal-god",
         "contains-exact-semantic-correspondence-with",
         "pettini-arxiv-v2",
+        "exact-for-ordered-pair-3-2",
     ),
     (
         "hossenfelder-video",
         "prompted-later-recognition-of",
         "industrial-metal-god",
+        "documented-observation",
     ),
-}
+)
 
 
 def load_json(relative: str) -> Any:
@@ -71,6 +77,16 @@ def parse_utc(value: str, artifact_id: str) -> datetime:
     return parsed
 
 
+def parse_canonical_date(value: Any, label: str, expected: str) -> date:
+    require(value == expected, f"canonical {label} changed: expected {expected}, got {value}")
+    try:
+        parsed = date.fromisoformat(value)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"invalid {label}: {value}") from exc
+    require(parsed.isoformat() == value, f"{label} must use canonical YYYY-MM-DD syntax")
+    return parsed
+
+
 def main() -> None:
     manifest = load_json("artifacts/manifest.json")
     zenodo = load_json(".zenodo.json")
@@ -79,15 +95,23 @@ def main() -> None:
         manifest.get("schema") == "qsol-imc-saw-1-artifact-manifest/1",
         "unexpected artifact manifest schema",
     )
-    require(manifest.get("project", {}).get("id") == "SAW-1", "unexpected project ID")
-    require(
-        manifest.get("project", {}).get("version") == "1.0.0",
-        "unexpected manifest project version",
-    )
+    project = manifest.get("project", {})
+    require(project.get("id") == "SAW-1", "unexpected project ID")
+    require(project.get("version") == "1.0.0", "unexpected manifest project version")
     require(zenodo.get("version") == "1.0.0", "unexpected Zenodo version")
     require(
         zenodo.get("publication_type") == "technicalnote",
         "Zenodo publication_type must be technicalnote",
+    )
+
+    documentation_date = parse_canonical_date(
+        project.get("publicationDate"),
+        "project publicationDate",
+        EXPECTED_DOCUMENTATION_DATE,
+    )
+    require(
+        zenodo.get("publication_date") == EXPECTED_DOCUMENTATION_DATE,
+        "Zenodo publication_date differs from canonical documentation date",
     )
 
     artifacts = manifest.get("artifacts")
@@ -116,6 +140,12 @@ def main() -> None:
             f"canonical SHA-256 changed for {artifact_id}",
         )
 
+    paper_date = parse_canonical_date(
+        by_id["pettini-arxiv-v2"].get("date"),
+        "pettini-arxiv-v2 date",
+        EXPECTED_PAPER_DATE,
+    )
+
     parsed_times: dict[str, datetime] = {}
     for artifact_id, expected_timestamp in EXPECTED_TIMESTAMPS.items():
         actual_timestamp = by_id[artifact_id].get("createdUtc")
@@ -126,9 +156,18 @@ def main() -> None:
         )
         parsed_times[artifact_id] = parse_utc(expected_timestamp, artifact_id)
 
+    paper_time = datetime.combine(paper_date, time.min, tzinfo=timezone.utc)
     reference_time = parsed_times["reference-track"]
     song_time = parsed_times["industrial-metal-god"]
-    require(reference_time < song_time, "reference track must precede final song")
+    documentation_time = datetime.combine(
+        documentation_date,
+        time.min,
+        tzinfo=timezone.utc,
+    )
+    require(
+        paper_time < reference_time < song_time < documentation_time,
+        "canonical chronology must satisfy paper < reference < song < documentation",
+    )
     require(
         abs((song_time - reference_time).total_seconds() - 3024.426) < 0.001,
         "reference-to-song interval is not 3024.426 seconds",
@@ -136,18 +175,32 @@ def main() -> None:
 
     relations = manifest.get("relations")
     require(isinstance(relations, list), "manifest relations must be a list")
-    actual_relations: set[tuple[str, str, str]] = set()
+    actual_relations: list[tuple[str, str, str, str]] = []
+    seen_relations: set[tuple[str, str, str, str]] = set()
+    required_relation_fields = {"subject", "predicate", "object", "strength"}
     for relation in relations:
         require(isinstance(relation, dict), "each relation must be an object")
-        subject = relation.get("subject")
-        predicate = relation.get("predicate")
-        object_id = relation.get("object")
+        require(
+            set(relation) == required_relation_fields,
+            "each relation must contain exactly subject, predicate, object, and strength",
+        )
+        subject = relation["subject"]
+        predicate = relation["predicate"]
+        object_id = relation["object"]
+        strength = relation["strength"]
         require(subject in by_id, f"unknown relation subject: {subject}")
         require(object_id in by_id, f"unknown relation object: {object_id}")
         require(isinstance(predicate, str), "relation predicate must be a string")
-        actual_relations.add((subject, predicate, object_id))
+        require(isinstance(strength, str), "relation strength must be a string")
+        relation_key = (subject, predicate, object_id, strength)
+        require(relation_key not in seen_relations, f"duplicate relation: {relation_key}")
+        seen_relations.add(relation_key)
+        actual_relations.append(relation_key)
 
-    require(actual_relations == EXPECTED_RELATIONS, "relation set differs from canonical manifest")
+    require(
+        tuple(actual_relations) == EXPECTED_RELATIONS,
+        "complete relation sequence differs from canonical manifest",
+    )
 
     print("SAW-1 metadata validation passed")
 
