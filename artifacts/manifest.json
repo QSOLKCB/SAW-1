@@ -1,0 +1,104 @@
+{
+  "schema": "qsol-imc-saw-1-artifact-manifest/1",
+  "project": {
+    "id": "SAW-1",
+    "version": "1.0.0",
+    "publicationDate": "2026-08-18"
+  },
+  "artifacts": [
+    {
+      "id": "source-lab-private-archive",
+      "filename": "E8-Chakra-Vortexmouth-Lab-v1.0.0(1).zip",
+      "role": "private-sonification-source",
+      "mediaType": "application/zip",
+      "bytes": 33310,
+      "sha256": "6b12eb900de306cc179c94860e614abd291a629d91b5fe8d04989253194abe0a",
+      "redistributed": false,
+      "rights": "Copyright Trent Slade / QSOL-IMC; private closed-source edition"
+    },
+    {
+      "id": "reference-track",
+      "filename": "Custom_Chakra_Field_ETQ-101_CHAKRA-ASCENT-101.mp3",
+      "role": "generative-reference-track",
+      "mediaType": "audio/mpeg",
+      "bytes": 1912128,
+      "durationSeconds": 90.024,
+      "sampleRateHz": 48000,
+      "channels": 2,
+      "createdUtc": "2026-07-27T09:24:54.574Z",
+      "generatorMetadata": "made with suno",
+      "generatorId": "f2cc26ca-60ce-4157-8f8d-d1b77379d7a0",
+      "sha256": "109ffa7a2254b14f5b98f1a11f599880b3a44669b5d919ac0ba3984d16162583",
+      "redistributed": false
+    },
+    {
+      "id": "industrial-metal-god",
+      "filename": "Industrial Metal God.mp3",
+      "role": "final-song",
+      "mediaType": "audio/mpeg",
+      "bytes": 5538846,
+      "durationSeconds": 235.728,
+      "sampleRateHz": 48000,
+      "channels": 2,
+      "createdUtc": "2026-07-27T10:15:19Z",
+      "generatorMetadata": "made with suno",
+      "generatorId": "14a28c7d-f11b-474d-a022-6b048f591977",
+      "sha256": "7be48bec0f090d25b9353a1767c37164e926d186fccb5686e622c703cfa6de8a",
+      "redistributed": false,
+      "identifiers": [
+        "https://www.youtube.com/watch?v=sdhpBFHahvY",
+        "https://open.spotify.com/track/0tEuzhyO2Iow6zueqkJfWk"
+      ]
+    },
+    {
+      "id": "pettini-arxiv-v2",
+      "role": "physics-context",
+      "title": "Quantum Entanglement Beyond Kinematics: A Dynamical Hypothesis in (3,2)-Dimensional Spacetime",
+      "creator": "Marco Pettini",
+      "version": "2",
+      "date": "2026-06-25",
+      "identifier": "https://arxiv.org/abs/2606.12457v2",
+      "redistributed": false
+    },
+    {
+      "id": "hossenfelder-video",
+      "role": "observation-context",
+      "title": "Spooky Action At Distance Comes from Second Time Dimension, Physicist Claims",
+      "creator": "Sabine Hossenfelder",
+      "identifier": "https://www.youtube.com/watch?v=8e_JSOxaEVQ",
+      "redistributed": false
+    }
+  ],
+  "relations": [
+    {
+      "subject": "source-lab-private-archive",
+      "predicate": "supplies-symbolic-and-receiver-basis-for",
+      "object": "reference-track",
+      "strength": "provenance-bounded"
+    },
+    {
+      "subject": "reference-track",
+      "predicate": "user-reported-cover-reference-for",
+      "object": "industrial-metal-god",
+      "strength": "user-supplied"
+    },
+    {
+      "subject": "industrial-metal-god",
+      "predicate": "contains-exact-semantic-correspondence-with",
+      "object": "pettini-arxiv-v2",
+      "strength": "exact-for-ordered-pair-3-2"
+    },
+    {
+      "subject": "hossenfelder-video",
+      "predicate": "prompted-later-recognition-of",
+      "object": "industrial-metal-god",
+      "strength": "documented-observation"
+    }
+  ],
+  "claimBoundary": [
+    "No physical entanglement between artifacts is claimed.",
+    "No prophecy or retrocausal information transfer is claimed.",
+    "The private source and MP3 files are not included in the repository.",
+    "Only the ordered-pair correspondence (3,2) is classified as exact."
+  ]
+}
