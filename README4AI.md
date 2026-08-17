@@ -8,8 +8,11 @@ project:
   version: 1.0.0
   author: Trent Slade
   affiliation: QSOL-IMC
+  author_orcid: 0009-0002-4515-9237
   type: technical-note
   publication_date: 2026-08-18
+  doi: 10.5281/zenodo.21984110
+  doi_url: https://doi.org/10.5281/zenodo.21984110
 primary_claim:
   expression: parse("Three beats to two") == signature(Pettini_3_2_model) == [3, 2]
   class: exact-numerical-semantic-correspondence
@@ -56,16 +59,24 @@ matching_receiver_preset:
   duration_seconds: 90
   golden_veil: false
   frequencies_hz: [396, 417, 528, 639, 741, 852, 963]
+provenance_records:
+  human_creator: provenance/TRENT_SLADE_ZENODO_PROVENANCE.json
+  ai_assistance: provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json
+  ai_is_author: false
+  final_human_accountability: Trent Slade
 boundaries:
   - The private source archive is not open source and must not be redistributed.
   - The supplied MP3s are generative outputs, not bitwise deterministic lab renders.
   - Only the lyric-to-(3,2) relation is an exact match; other mappings are analogies.
   - Do not report Pettini's model as established physics.
   - Do not infer therapeutic or medical claims from receiver terminology.
+  - ChatGPT is disclosed as an AI assistance system, not a human creator or accountable author.
 canonical_files:
   human_entry: README.md
   formal_note: FORMALIZATION.md
   artifact_manifest: artifacts/manifest.json
   measurements: analysis/MEASUREMENTS.md
   machine_context: README4AI.md
+  human_provenance: provenance/TRENT_SLADE_ZENODO_PROVENANCE.json
+  ai_disclosure: provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json
 ```
