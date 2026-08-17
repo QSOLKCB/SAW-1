@@ -13,6 +13,10 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "artifacts" / "manifest.json"
+CANONICAL_EVIDENCE_HASHES = {
+    "reference-track": "109ffa7a2254b14f5b98f1a11f599880b3a44669b5d919ac0ba3984d16162583",
+    "industrial-metal-god": "7be48bec0f090d25b9353a1767c37164e926d186fccb5686e622c703cfa6de8a",
+}
 SR = 48_000
 WINDOW = 2.0
 
@@ -25,20 +29,27 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def load_expected_hashes(manifest_path: Path) -> dict[str, str]:
-    with manifest_path.open("r", encoding="utf-8") as handle:
+def load_expected_hashes() -> dict[str, str]:
+    """Verify the checked-in manifest against hashes pinned in this program."""
+    with DEFAULT_MANIFEST.open("r", encoding="utf-8") as handle:
         manifest = json.load(handle)
 
     artifacts = {artifact["id"]: artifact for artifact in manifest["artifacts"]}
-    expected: dict[str, str] = {}
-    for artifact_id in ("reference-track", "industrial-metal-god"):
+    manifest_hashes: dict[str, str] = {}
+    for artifact_id in CANONICAL_EVIDENCE_HASHES:
         try:
-            expected[artifact_id] = artifacts[artifact_id]["sha256"]
+            manifest_hashes[artifact_id] = artifacts[artifact_id]["sha256"]
         except KeyError as exc:
             raise ValueError(
-                f"manifest is missing canonical SHA-256 for {artifact_id}"
+                f"checked-in manifest is missing canonical SHA-256 for {artifact_id}"
             ) from exc
-    return expected
+
+    if manifest_hashes != CANONICAL_EVIDENCE_HASHES:
+        raise ValueError(
+            "checked-in manifest evidence hashes differ from the canonical hashes "
+            "pinned in analysis/audio_probe.py"
+        )
+    return dict(CANONICAL_EVIDENCE_HASHES)
 
 
 def decode(path: Path) -> np.ndarray:
@@ -121,19 +132,13 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("reference", type=Path)
     parser.add_argument("song", type=Path)
-    parser.add_argument(
-        "--manifest",
-        type=Path,
-        default=DEFAULT_MANIFEST,
-        help="artifact manifest containing canonical evidence hashes",
-    )
     args = parser.parse_args()
-    for path in (args.reference, args.song, args.manifest):
+    for path in (args.reference, args.song, DEFAULT_MANIFEST):
         if not path.is_file():
             parser.error(f"file not found: {path}")
 
     try:
-        expected = load_expected_hashes(args.manifest)
+        expected = load_expected_hashes()
         result = {
             "schema": "qsol-imc-saw-1-audio-probe/1",
             "reference": analyse(
