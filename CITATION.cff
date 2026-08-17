@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you use or discuss SAW-1, please cite this technical note."
-title: "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence"
-type: article
+message: "If you use or discuss SAW-1, please cite the preferred technical-note citation below."
+title: "SAW-1 — Spooky Action at Work"
+type: software
 version: 1.0.0
 date-released: 2026-08-18
-license: CC-BY-4.0
+license: MPL-2.0
 authors:
   - family-names: Slade
     given-names: Trent
@@ -27,3 +27,14 @@ keywords:
   - provenance
 repository-code: "https://github.com/QSOLKCB/SAW-1"
 url: "https://github.com/QSOLKCB/SAW-1"
+preferred-citation:
+  type: article
+  title: "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence"
+  authors:
+    - family-names: Slade
+      given-names: Trent
+      affiliation: QSOL-IMC
+  year: 2026
+  month: 8
+  version: 1.0.0
+  url: "https://github.com/QSOLKCB/SAW-1"
