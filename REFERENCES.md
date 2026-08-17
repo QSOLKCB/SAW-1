@@ -1,5 +1,12 @@
 # References
 
+## SAW-1 archival record
+
+Trent Slade, **“SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence,”** version 1.0.0, QSOL-IMC, 18 August 2026.  
+DOI: https://doi.org/10.5281/zenodo.21984110
+
+The DOI was reserved for the version 1.0.0 Zenodo record.
+
 ## Primary physics context
 
 Marco Pettini, **“Quantum Entanglement Beyond Kinematics: A Dynamical Hypothesis in (3,2)-Dimensional Spacetime,”** arXiv:2606.12457v2, 25 June 2026.  
@@ -40,3 +47,10 @@ The reference MP3 and final song are identified by SHA-256 in `artifacts/manifes
 **E8 Chakra Vortexmouth Sonification Lab · RX-01 · v1.0.0**, Trent Slade / QSOL-IMC, 2026. Private closed-source local edition.
 
 The archive was inspected solely to document the sonification basis. It is not included or relicensed by SAW-1.
+
+## Creator and AI-assistance disclosure
+
+- [`provenance/TRENT_SLADE_ZENODO_PROVENANCE.json`](provenance/TRENT_SLADE_ZENODO_PROVENANCE.json) identifies Trent Slade as the human creator, accountable author, QSOL-IMC affiliate, and ORCID holder.
+- [`provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json`](provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json) records the bounded assistance supplied by OpenAI ChatGPT (GPT-5.6 Thinking).
+
+The AI system is disclosed as a contributor and tool, not as a human author, legal person, ORCID holder, rights holder, or independently accountable research subject.
