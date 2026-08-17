@@ -20,7 +20,7 @@ SAW-1 documents a three-layer creative chain:
 The formal result is deliberately modest:
 
 \[
-\operatorname{parse}(\text{“three beats to two”})=(3,2)
+\operatorname{parse}(\text{“Three beats to two”})=(3,2)
 \]
 
 and Pettini's proposed spacetime signature is also:
@@ -48,8 +48,8 @@ This is a **documented semantic coincidence**, not evidence of prophecy, retroca
 | Event | UTC date/time | Evidence |
 |---|---:|---|
 | Pettini paper v2 | 2026-06-25 | arXiv version metadata |
-| Reference MP3 created | 2026-07-27 09:24:54.574 | embedded MP3 metadata |
-| `Industrial Metal God` created | 2026-07-27 10:15:19 | embedded MP3 metadata |
+| Reference MP3 created | `2026-07-27T09:24:54.574Z` | embedded MP3 metadata |
+| `Industrial Metal God` created | `2026-07-27T10:15:19Z` | embedded MP3 metadata |
 | Reference-to-song interval | 00:50:24.426 | metadata subtraction |
 | Correspondence documented | 2026-08-18 | SAW-1 record |
 
@@ -86,6 +86,8 @@ python analysis/audio_probe.py \
   "Industrial Metal God.mp3"
 ```
 
+Before decoding, the script verifies each positional file against the canonical SHA-256 for its artifact ID in [`artifacts/manifest.json`](artifacts/manifest.json). A different export or swapped argument order fails closed instead of producing mislabeled measurements.
+
 The script decodes to mono float32 at 48 kHz, calculates fixed-window power-spectrum metrics, and emits canonical JSON.
 
 ## Canonical media and context
@@ -97,7 +99,7 @@ The script decodes to mono float32 at 48 kHz, calculates fixed-window power-spec
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). After the first Zenodo archive is minted, add the concept DOI badge and DOI identifier in a metadata-only follow-up release.
+See [`CITATION.cff`](CITATION.cff). Its supported top-level work type describes the repository software, while `preferred-citation` represents the technical note. After the first Zenodo archive is minted, add the concept DOI badge and DOI identifier in a metadata-only follow-up release.
 
 ## Rights
 
