@@ -21,3 +21,10 @@ jobs:
         run: python -O scripts/validate_metadata.py
       - name: Compile Python utilities
         run: python -m py_compile scripts/validate_metadata.py analysis/audio_probe.py
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Lean 4 coordinate-swap proof
+        uses: leanprover/lean-action@v1.5.0
