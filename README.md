@@ -84,7 +84,7 @@ Then
 
 Thus `(2,3)` and `(3,2)` are unequal as ordered pairs but lie in the same two-point orbit under coordinate exchange. The repository now machine-checks these statements in Lean 4.
 
-This offers an ordinary creative explanation that does not require exotic transfer: a creator repeatedly working with nearby physics, determinism, ternary, sonification, and cybernetic motifs can revisit a familiar pair in reversed order. SAW-1 calls this **parallel or convergent human thinking**. The psychological explanation is contextual, not theorem-proved; Lean proves only the pair algebra.
+This supplies a simple **ordinary creative possibility** that does not require exotic transfer: a creator repeatedly working with nearby physics, determinism, ternary, sonification, and cybernetic motifs can revisit a familiar pair in reversed order. SAW-1 treats parallel or convergent human thinking as one compatible possibility among several. It is not established as the explanation for this lyric; Lean proves only the pair algebra.
 
 ### Memory and reconstruction boundary
 
@@ -92,19 +92,21 @@ SAW-1 does not use `photographic memory` as a technical explanation and does not
 
 > **associative reconstruction with uncertain source attribution**
 
-Established memory research gives several ordinary mechanisms that are compatible with prior material influencing later production without requiring perfect conscious recollection of its source: **implicit memory**, **source monitoring**, qualified **cryptomnesia-like self-retrieval**, and **pattern completion**. These are background mechanisms, not a diagnosis of what happened in this case.
+General memory research establishes broad phenomena relevant to the discussion, including **implicit-memory effects**, **source monitoring/source-attribution uncertainty**, and **pattern completion** as a bounded cue/reconstruction concept. These provide background showing that prior material can influence later production without perfect conscious source recall.
+
+The phrase **cryptomnesia-like self-retrieval** is different. It is a deliberately qualified SAW-1 analogy adapted from cryptomnesia literature, not a literature-established mechanism for reuse of one's own earlier creative work. The less loaded phrase **source-uncertain self-retrieval** is preferred when discussing that possibility.
 
 A possible path can be represented schematically as
 
 \[
-M_{2025}
+M_{\mathrm{candidate}}
 \xrightarrow{A}
 (2,3)
 \xrightarrow{\tau}
 (3,2),
 \]
 
-where \(A\) is an unobserved retrieval/reconstruction step and only the coordinate swap \(\tau(2,3)=(3,2)\) is theorem-proved. SAW-1 explicitly preserves competing ordinary explanations including conscious reuse, implicit reuse, source-uncertain self-retrieval, associative recombination, convergent reconstruction, generative-system contribution, and mixed human–AI production.
+where `M_candidate` is intentionally undated, \(A\) is an unobserved retrieval/reconstruction step, and only the coordinate swap \(\tau(2,3)=(3,2)\) is theorem-proved. SAW-1 explicitly preserves competing ordinary possibilities including conscious reuse, implicit reuse, source-uncertain self-retrieval, associative recombination, convergent reconstruction, generative-system contribution, and mixed human–AI production.
 
 See [`analysis/COGNITIVE_MECHANISMS.md`](analysis/COGNITIVE_MECHANISMS.md) for the literature-backed terminology and evidence boundary.
 
