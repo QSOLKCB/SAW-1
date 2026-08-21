@@ -41,30 +41,38 @@ Author-reported influence and intent may be recorded when explicitly labelled as
 - `God` in the author's music is intentionally open to interpretation and is not to be rewritten as a required religious figure;
 - `His bassline is law` may be documented as an ordinary deterministic/superdeterministic creative reading, not as a physics theorem;
 - the reported creative lineage from `God Is a DJ`, `Cybernetic God`, and related works is context, not proof of causal exclusivity;
-- ordinary parallel or convergent human thinking is an admissible non-exotic explanation for nearby motifs such as `(2,3)` and `(3,2)`.
+- ordinary parallel or convergent human thinking is an admissible **non-exotic explanatory possibility** for nearby motifs such as `(2,3)` and `(3,2)`, not a case-level sufficient explanation.
 
 ## Cognitive-mechanism boundary
 
 Memory-science concepts may be used only as **general explanatory possibilities**, never as retrospective diagnosis or proof of the author's mental state.
 
-Permitted bounded concepts include:
+Literature-backed background concepts include:
 
-- associative reconstruction;
 - implicit memory;
 - source monitoring and source-attribution uncertainty;
-- qualified cryptomnesia-like self-retrieval;
-- pattern completion as a bounded cue/reconstruction analogy;
+- pattern completion, used only as a bounded cue/reconstruction analogy.
+
+Repository-defined or adapted explanatory language includes:
+
+- associative reconstruction;
+- source-uncertain self-retrieval;
+- qualified `cryptomnesia-like self-retrieval`;
 - parallel or convergent reconstruction.
+
+Do not describe repository-defined or adapted language as an established mechanism merely because related literature exists.
 
 Required wording discipline:
 
 - Prefer **`associative reconstruction with uncertain source attribution`** as the umbrella phrase.
 - Do not diagnose a `source-monitoring failure` from the music; say `source-attribution uncertainty` when discussing the possibility.
-- `Cryptomnesia` is usually discussed as inadvertent plagiarism. When the candidate source is the author's own earlier work, do not call the case plagiarism. Use `cryptomnesia-like self-retrieval` only with the qualification intact.
+- `Cryptomnesia` is usually discussed as inadvertent plagiarism. When the candidate source is the author's own earlier work, do not call the case plagiarism. Use `cryptomnesia-like self-retrieval` only as an explicitly qualified analogy, not as a literature-established self-reuse mechanism.
 - Do not claim that the author has `photographic memory`, `eidetic memory`, exceptional memory, amnesia, or any other memory phenotype or disorder.
 - Do not infer a specific brain region, hippocampal event, or neurological mechanism from a lyric.
 - Do not convert memory-science background into evidence that the Cybernetic God antecedent exists; lyric provenance still requires artifact evidence.
 - A schematic retrieval arrow may be used in prose or equations, but it must be labelled possible/unobserved and must never be encoded as a Lean theorem or axiom.
+- Do not attach an unverified date or year to a candidate memory/motif state. Use an undated label such as `M_candidate` unless the date itself is independently classified and supported.
+- Describe cognitive mechanisms as **compatible or available explanatory possibilities**, not as sufficient explanations of the lyric.
 
 The cognitive-mechanism reference note is `analysis/COGNITIVE_MECHANISMS.md`.
 
