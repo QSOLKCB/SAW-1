@@ -137,11 +137,13 @@ Reference: E. T. Rolls, “The mechanisms for pattern completion and pattern sep
 
 ## 7. A bounded reconstruction model for `(2,3) → (3,2)`
 
-Let the earlier candidate motif be
+Let the **author-reported candidate** motif be
 
 \[
 m=(2,3).
 \]
+
+This assignment is conditional on later transcript-level capture confirming the candidate parse. It is not supplied by memory science.
 
 Let \(A\) denote activation or retrieval of a nearby remembered structure, without specifying whether that retrieval is conscious or implicit.
 
@@ -222,8 +224,10 @@ General memory/recombination research would then remain compatible with ordinary
 
 ## 11. Preferred SAW-1 wording
 
-When summarizing the cognitive possibility, use:
+When summarizing the cognitive possibility **before transcript-level capture of the candidate antecedent**, use:
 
-> The earlier motif may have remained available through ordinary associative or implicit memory, with uncertain source attribution, and later been reconstructed or recombined. Because the transformation from `(2,3)` to `(3,2)` is a single coordinate exchange, ordinary cognitive and creative processes remain compatible with the relation. This is an explanatory possibility, not a reconstructed psychological history or a sufficient case-level explanation.
+> If the author-reported candidate `(2,3)` motif is later verified in the earlier Cybernetic God material, ordinary associative or implicit memory with uncertain source attribution would remain compatible with later reconstruction or recombination. The transformation from `(2,3)` to `(3,2)` is a single coordinate exchange, but the theorem establishes only that mathematical relation, not the production history. This is an explanatory possibility, not evidence that the antecedent or any particular memory mechanism occurred.
 
-That sentence keeps the interesting part while keeping the evidence classes welded shut.
+After transcript-level capture, the opening condition may be replaced by the verified provenance statement, while the memory-mechanism language must remain possibility-level.
+
+That wording keeps the interesting part while keeping the evidence classes welded shut.
