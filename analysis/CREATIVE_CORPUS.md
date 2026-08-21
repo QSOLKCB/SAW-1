@@ -17,7 +17,9 @@ The author identifies the following four albums as the main physics-related albu
 
 These titles are used here as an **author-reported corpus declaration**, not as proof that every track on every album contains a physics claim.
 
-A public-web search performed for this update used exact-title combinations with `Trent Slade`, `QSOL-IMC`, `YouTube`, `Spotify`, `physics`, and `sonification`. Public search indexing was uneven. The strongest independently recoverable result was **Memory Virus**. Existing QSOL research material cites the public YouTube Music album playlist and states that the album was produced using data-sonification material from SPECTRAL. The SPECTRAL repository independently documents deterministic and creative E8 sonification workflows, including explicit E8-to-audio mappings, qutrit/ternary morphing, triality exchange, and canonical/replay-safe render modes.
+A public-web search performed for this update used exact-title combinations with `Trent Slade`, `QSOL-IMC`, `YouTube`, `Spotify`, `physics`, and `sonification`. Public search indexing was uneven.
+
+For **Memory Virus**, the public YouTube Music playlist supplies external evidence that a publicly distributed album object with that title exists. Separately, QSOL-authored research material states that **Memory Virus** was produced using data-sonification material from SPECTRAL. That production-lineage statement remains **first-party / author-reported evidence**, not independent corroboration. SPECTRAL itself is likewise first-party implementation evidence showing that the declared sonification workflows exist publicly.
 
 Publicly recoverable source anchors:
 
@@ -28,16 +30,18 @@ Publicly recoverable source anchors:
 
 The exact-title searches for **Vector Equilibrium**, **Superdeterminism**, and **Silicon Ziggurat** did not yield comparably strong independently indexed album pages in the search snapshot used for this update. SAW-1 therefore records their role as author-reported background corpus rather than silently upgrading weak search hits into independent evidence.
 
-## Sonification as an established creative practice
+## Sonification as an established first-party creative practice
 
-The background-rate conclusion does not depend only on album titles. Public QSOL/SPECTRAL materials establish a broader sonification practice:
+The background-rate conclusion does not depend only on album titles. Public QSOL/SPECTRAL materials establish a **first-party documented** sonification practice:
 
 1. SPECTRAL exposes deterministic and replay-safe mappings from mathematical and scientific structures to audio.
 2. The SPECTRAL E8 Geometry Studio explicitly states that E8 supplies control geometry for sonification/composition mappings while denying that exported WAV files are literal physical measurements.
-3. A separate QSOL research manuscript describes **Memory Virus** as an artistic endpoint built from SPECTRAL data-sonification material.
+3. A QSOL research manuscript describes **Memory Virus** as an artistic endpoint built from SPECTRAL data-sonification material.
 4. QSOL's Sonified Demoscene Works methodology describes a corpus in which astronomical, experimental, mathematical, and computational sonification WAVs become compositional source material.
 
-This means that terms such as `geometry`, `dimension`, `symmetry`, `determinism`, `triality`, `E8`, `signal`, `information`, `universe`, and `sonification` have a high prior frequency in the author's creative environment. Their mere appearance in a lyric is weak evidence of anything beyond normal thematic continuity.
+These sources establish that the author publicly documents such a practice. They do **not** independently verify every production-history statement inside the same first-party corpus.
+
+This means that terms such as `geometry`, `dimension`, `symmetry`, `determinism`, `triality`, `E8`, `signal`, `information`, `universe`, and `sonification` have a high prior frequency in the author's declared and publicly documented creative environment. Their mere appearance in a lyric is weak evidence of anything beyond normal thematic continuity.
 
 ## Negative-control reminder: Sonification 2005
 
@@ -62,11 +66,17 @@ For the proposed extension, the author supplied six public Cybernetic God videos
 - https://youtu.be/tvfrmy-6_GM
 - https://youtu.be/k5mkd7EjU-I
 
-The author reports that an earlier Cybernetic God lyric pattern is parsed as `(2,3)`. That report is **not yet promoted to a transcript-verified exact claim in this repository**. The Lean proof therefore formalizes only the conditional mathematical statement:
+The author reports that an earlier Cybernetic God lyric pattern is parsed as `(2,3)`. That report is **not yet promoted to a transcript-verified exact claim in this repository**. The Lean proof therefore formalizes only the explicit ordered-pair mathematics:
 
 ```text
-if an earlier feature is parsed as (2,3),
-then coordinate exchange maps it to (3,2).
+coordinateSwap((2,3)) = (3,2)
+```
+
+The semantic conditional remains outside Lean:
+
+```text
+if an earlier lyric feature is independently captured and parsed as (2,3),
+then the proved coordinate-swap theorem applies to that parsed pair.
 ```
 
 This keeps mathematical validity separate from lyric-transcription provenance.
@@ -111,6 +121,8 @@ tau(tau(p)) = p.
 
 Thus `(2,3)` and `(3,2)` are distinct ordered pairs but occupy the same two-point orbit under the nontrivial permutation of two coordinates.
 
+General memory mechanisms that could support ordinary recurrence or reconstruction are discussed separately in [`COGNITIVE_MECHANISMS.md`](COGNITIVE_MECHANISMS.md). They are explanatory possibilities, not case-specific proof.
+
 ## Evidential consequence for SAW-1
 
 The corpus changes the baseline but not the core theorem.
@@ -120,5 +132,6 @@ The corpus changes the baseline but not the core theorem.
 - Exact `(3,2)` ordered pair in Industrial Metal God: still the exact SAW-1 feature.
 - Earlier author-reported `(2,3)` in Cybernetic God: a candidate transposed antecedent, pending transcript-level capture.
 - `(2,3) <-> (3,2)` relation: mathematically exact under coordinate exchange and machine-proved in Lean.
+- Memory/creative reconstruction mechanisms: ordinary explanatory background, not evidence that a specific mechanism occurred.
 
 The resulting interpretation is deliberately modest: the broader catalogue makes ordinary creative convergence more plausible, while the exact pair relation remains worth documenting because it is structurally specific.
