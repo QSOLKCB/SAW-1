@@ -82,14 +82,49 @@ The author reports the title/concept as a creative influence on his own open-end
 
 The author also reports that **“His bassline is law”** is naturally rooted in the deterministic and superdeterministic vocabulary recurring through his work. This is authorial interpretation, not a mathematical or physical theorem.
 
+## Memory and source-monitoring background
+
+These references support only **general memory-science mechanisms** used as bounded explanatory possibilities in `analysis/COGNITIVE_MECHANISMS.md`. They are not evidence that any one mechanism occurred in the author during creation of a particular lyric.
+
+Marcia K. Johnson, Shahin Hashtroudi, and D. Stephen Lindsay, **“Source monitoring,”** *Psychological Bulletin* 114(1) (1993), 3–28.  
+DOI: https://doi.org/10.1037/0033-2909.114.1.3  
+PubMed: https://pubmed.ncbi.nlm.nih.gov/8346328/
+
+The source-monitoring framework is used for the bounded distinction
+
+\[
+\text{memory for content}\neq\text{certainty about source}.
+\]
+
+Daniel L. Schacter, Chi-Yue Chiu, and Kevin N. Ochsner, **“Implicit memory: a selective review,”** *Annual Review of Neuroscience* 16 (1993), 159–182.  
+DOI: https://doi.org/10.1146/annurev.ne.16.030193.001111  
+PubMed: https://pubmed.ncbi.nlm.nih.gov/8460889/
+
+This supports the general distinction between influence of prior experience and explicit conscious recollection.
+
+Amanda C. Gingerich and Meaghan C. Sullivan, **“Claiming hidden memories as one's own: A review of inadvertent plagiarism,”** *Journal of Cognitive Psychology* 25(8) (2013), 903–916.  
+DOI: https://doi.org/10.1080/20445911.2013.841674
+
+The review treats cryptomnesia/inadvertent plagiarism in relation to source monitoring. SAW-1 does **not** label retrieval of the author's own prior material plagiarism; it uses `cryptomnesia-like self-retrieval` only as a qualified analogy and prefers `associative reconstruction with uncertain source attribution`.
+
+C. Neil Macrae, Galen V. Bodenhausen, and Guglielmo Calvini, **“Contexts of Cryptomnesia: May the Source Be with You,”** *Social Cognition* 17(3) (1999), 273–295.  
+DOI: https://doi.org/10.1521/soco.1999.17.3.273
+
+Edmund T. Rolls, **“The mechanisms for pattern completion and pattern separation in the hippocampus,”** *Frontiers in Systems Neuroscience* 7 (2013), 74.  
+DOI: https://doi.org/10.3389/fnsys.2013.00074  
+PubMed: https://pubmed.ncbi.nlm.nih.gov/24198767/
+
+SAW-1 borrows `pattern completion` only as a bounded cue/reconstruction analogy and does not infer a specific hippocampal or neurological event from a lyric.
+
 ## Lean 4 proof environment
 
 - Lean 4: https://github.com/leanprover/lean4
-- lean-action: https://github.com/leanprover/lean-action
+- Elan toolchain manager: https://github.com/leanprover/elan
 - Repository proof: `SAW1/PairSwap.lean`
-- Pinned toolchain: `leanprover/lean4:v4.30.0`
+- Pinned Lean toolchain: `leanprover/lean4:v4.30.0`
+- CI installer source: Elan commit `464c9d28395000a2a0128e07081e4956d50eced2`
 
-The Lean proof is intentionally limited to coordinate-swap algebra. It does not encode lyric provenance, psychology, historical chronology, or physical validity as axioms.
+The Lean proof is intentionally limited to coordinate-swap algebra. It does not encode lyric provenance, memory mechanisms, psychology, historical chronology, or physical validity as axioms.
 
 ## Private source
 
