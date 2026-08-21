@@ -95,15 +95,15 @@ These are statements of authorial intent and creative provenance. They are not m
 
 ## Parallel human thinking
 
-The conservative cognitive model is ordinary parallel or convergent thinking.
+The conservative cognitive framing is ordinary parallel or convergent thinking as an **available explanatory possibility**, not a demonstrated production history.
 
-A creator immersed in a stable vocabulary can repeatedly revisit nearby structures without consciously reconstructing every prior source. In this case, the relevant local transformation is especially small:
+A creator immersed in a stable vocabulary can in general revisit nearby structures without consciously reconstructing every prior source. For the pair at issue, the local mathematical transformation is especially small:
 
 ```text
 (2,3) -> (3,2)
 ```
 
-It requires only coordinate exchange. No exotic information-transfer hypothesis is needed to explain how a familiar two-number motif could later appear in reversed order.
+Coordinate exchange makes that **numerical transformation mathematically available**. The theorem does not establish that the earlier motif was familiar at the relevant moment, that a memory mechanism occurred, or that coordinate exchange generated the later lyric.
 
 Formally, with
 
@@ -121,7 +121,7 @@ tau(tau(p)) = p.
 
 Thus `(2,3)` and `(3,2)` are distinct ordered pairs but occupy the same two-point orbit under the nontrivial permutation of two coordinates.
 
-General memory mechanisms that could support ordinary recurrence or reconstruction are discussed separately in [`COGNITIVE_MECHANISMS.md`](COGNITIVE_MECHANISMS.md). They are explanatory possibilities, not case-specific proof.
+General memory phenomena that are compatible with ordinary recurrence or reconstruction are discussed separately in [`COGNITIVE_MECHANISMS.md`](COGNITIVE_MECHANISMS.md). They are explanatory possibilities, not case-specific proof.
 
 ## Evidential consequence for SAW-1
 
@@ -132,6 +132,6 @@ The corpus changes the baseline but not the core theorem.
 - Exact `(3,2)` ordered pair in Industrial Metal God: still the exact SAW-1 feature.
 - Earlier author-reported `(2,3)` in Cybernetic God: a candidate transposed antecedent, pending transcript-level capture.
 - `(2,3) <-> (3,2)` relation: mathematically exact under coordinate exchange and machine-proved in Lean.
-- Memory/creative reconstruction mechanisms: ordinary explanatory background, not evidence that a specific mechanism occurred.
+- Memory/creative reconstruction phenomena: ordinary explanatory background, not evidence that a specific mechanism occurred.
 
-The resulting interpretation is deliberately modest: the broader catalogue makes ordinary creative convergence more plausible, while the exact pair relation remains worth documenting because it is structurally specific.
+The resulting interpretation is deliberately modest: the broader catalogue makes ordinary creative convergence a reasonable possibility to consider, while the exact pair relation remains worth documenting because it is structurally specific.
