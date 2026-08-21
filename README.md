@@ -60,9 +60,11 @@ The paper predates the music. SAW-1 formalizes the **later recognition** of the 
 
 ## 1.1 extension: creative background and the `(2,3) ↔ (3,2)` swap
 
-The wider creative corpus matters because it supplies a realistic baseline. Trent Slade identifies **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat** as the main physics-related albums relevant to the comparison. Public search indexing is uneven, so SAW-1 does not pretend that every album claim is independently web-verified. **Memory Virus** is independently corroborated in existing public QSOL research material as an album made using data-sonification material from SPECTRAL, while SPECTRAL itself publicly documents E8, qutrit, triality, deterministic, replay-safe, astronomical, mathematical, and computational sonification workflows.
+The wider creative corpus matters because it supplies a realistic baseline. Trent Slade identifies **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat** as the main physics-related albums relevant to the comparison. Public search indexing is uneven, so SAW-1 does not pretend that every album claim is independently web-verified.
 
-That background lowers the evidentiary weight of generic overlap. Physics vocabulary, deterministic imagery, geometry, dimensions, E8, triality, recursion, information, and sonification are ordinary parts of the author's creative environment. The exact `(3,2)` ordered pair remains the narrow SAW-1 feature.
+For **Memory Virus**, a public YouTube Music playlist supplies external evidence that a publicly distributed album object with that title exists. Separately, QSOL-authored research material states that the album was produced using SPECTRAL data-sonification material. That production-lineage statement remains **first-party / author-reported evidence**, while SPECTRAL itself provides public first-party implementation evidence for E8, qutrit, triality, deterministic, replay-safe, astronomical, mathematical, and computational sonification workflows.
+
+That background lowers the evidentiary weight of generic overlap. Physics vocabulary, deterministic imagery, geometry, dimensions, E8, triality, recursion, information, and sonification are ordinary parts of the author's declared and publicly documented creative environment. The exact `(3,2)` ordered pair remains the narrow SAW-1 feature.
 
 The author also reports that an earlier **Cybernetic God** lyric pattern is naturally parsed as `(2,3)`. Until a transcript-level evidence artifact is committed, SAW-1 labels that antecedent as **author-reported** rather than transcript-verified. The mathematical relation itself is exact. Define
 
@@ -128,6 +130,8 @@ The proof surface is deliberately tiny:
 - proves `(2,3) ≠ (3,2)` as ordered pairs;
 - proves `swap (2,3) = (3,2)` and the reverse;
 - proves both pairs occupy the same orbit under the swap relation.
+
+The Lean file intentionally contains **no semantic constants for Cybernetic God or Pettini**. Those labels remain in prose/evidence layers so a definitional `rfl` theorem cannot be mistaken for proof of historical provenance.
 
 The toolchain is pinned in [`lean-toolchain`](lean-toolchain), and GitHub Actions runs the Lean project alongside the existing metadata validation.
 
