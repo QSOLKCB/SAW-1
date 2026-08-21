@@ -33,7 +33,7 @@ Let \(\mathcal C\) denote the author's relevant creative corpus. The author iden
 \textit{Silicon Ziggurat}\}.
 \]
 
-The public search audit for this extension found uneven indexing for the four exact album titles. **Memory Virus** has the strongest independent public corroboration: existing QSOL research material cites its public YouTube Music playlist and states that it was produced using SPECTRAL data-sonification material. SPECTRAL itself publicly implements E8, qutrit, triality, astronomical, mathematical, computational, deterministic, and replay-safe sonification workflows.
+The public search audit for this extension found uneven indexing for the four exact album titles. For **Memory Virus**, a public YouTube Music playlist supplies external evidence that a public album object with that title exists. Separately, QSOL-authored research material states that the album was produced using SPECTRAL data-sonification material. That production-lineage statement remains **first-party / author-reported evidence**, not independent corroboration. SPECTRAL itself supplies public first-party implementation evidence for E8, qutrit, triality, astronomical, mathematical, computational, deterministic, and replay-safe sonification workflows.
 
 Therefore broad feature classes such as
 
@@ -42,7 +42,7 @@ Therefore broad feature classes such as
 \text{E8},\text{triality},\text{signal},\text{information},\text{sonification}\}
 \]
 
-have elevated prior frequency in the author's creative environment. SAW-1 consequently assigns little evidentiary weight to generic overlap in those classes.
+have elevated prior frequency in the author's declared and publicly documented creative environment. SAW-1 consequently assigns little evidentiary weight to generic overlap in those classes.
 
 This is a **baseline correction**, not a probability estimate. The repository does not claim to have a complete lyric corpus from which a numerical coincidence probability can presently be computed.
 
@@ -350,7 +350,7 @@ These are statements of authorial intent. They are relevant to interpretation bu
 
 ## 10. Lean 4 theorem boundary
 
-The machine-checked file [`SAW1/PairSwap.lean`](SAW1/PairSwap.lean) proves the following purely mathematical facts:
+The machine-checked file [`SAW1/PairSwap.lean`](SAW1/PairSwap.lean) proves only explicit pair algebra:
 
 \[
 \tau(2,3)=(3,2),
@@ -368,7 +368,9 @@ The machine-checked file [`SAW1/PairSwap.lean`](SAW1/PairSwap.lean) proves the f
 \tau(\tau(p))=p,
 \]
 
-and that the two pairs satisfy the repository's `sameUpToSwap` relation.
+and that the two explicit pairs satisfy the repository's `sameUpToSwap` relation.
+
+The Lean file intentionally contains **no semantic constants or theorems named for Cybernetic God or Pettini**. Semantic interpretation remains conditional prose outside the proof surface.
 
 Lean does **not** prove:
 
@@ -392,7 +394,9 @@ Those are intentionally outside the theorem boundary.
 | equality of the two `(3,2)` objects | exact semantic/numerical correspondence |
 | Cybernetic God `(2,3)` | author-reported candidate pending transcript capture |
 | `(2,3)` → `(3,2)` by coordinate swap | exact mathematical theorem, Lean-checked |
-| physics/sonification-heavy creative background | corpus/context evidence |
+| public Memory Virus album existence | external public-object evidence |
+| Memory Virus → SPECTRAL production lineage | first-party / author-reported production evidence |
+| physics/sonification-heavy creative background | first-party corpus/context evidence |
 | implicit memory / source monitoring / pattern completion | established general memory-science background, not case proof |
 | associative reconstruction with uncertain source attribution | preferred bounded explanatory umbrella |
 | cryptomnesia-like self-retrieval | qualified analogy, not a plagiarism claim |
