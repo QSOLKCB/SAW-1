@@ -4,7 +4,7 @@
 
 1. Preserve artifact provenance and hashes.
 2. Preserve the chronology `paper < reference < song < documented observation` for the original SAW-1 chain.
-3. Keep exact claims separate from analogies, author reports, and conditional claims.
+3. Keep exact claims separate from analogies, author reports, conditional claims, and explanatory hypotheses.
 4. Keep private source and audio outside the repository.
 5. Prefer compact mathematical documentation over framework or tooling bloat.
 
@@ -43,6 +43,31 @@ Author-reported influence and intent may be recorded when explicitly labelled as
 - the reported creative lineage from `God Is a DJ`, `Cybernetic God`, and related works is context, not proof of causal exclusivity;
 - ordinary parallel or convergent human thinking is an admissible non-exotic explanation for nearby motifs such as `(2,3)` and `(3,2)`.
 
+## Cognitive-mechanism boundary
+
+Memory-science concepts may be used only as **general explanatory possibilities**, never as retrospective diagnosis or proof of the author's mental state.
+
+Permitted bounded concepts include:
+
+- associative reconstruction;
+- implicit memory;
+- source monitoring and source-attribution uncertainty;
+- qualified cryptomnesia-like self-retrieval;
+- pattern completion as a bounded cue/reconstruction analogy;
+- parallel or convergent reconstruction.
+
+Required wording discipline:
+
+- Prefer **`associative reconstruction with uncertain source attribution`** as the umbrella phrase.
+- Do not diagnose a `source-monitoring failure` from the music; say `source-attribution uncertainty` when discussing the possibility.
+- `Cryptomnesia` is usually discussed as inadvertent plagiarism. When the candidate source is the author's own earlier work, do not call the case plagiarism. Use `cryptomnesia-like self-retrieval` only with the qualification intact.
+- Do not claim that the author has `photographic memory`, `eidetic memory`, exceptional memory, amnesia, or any other memory phenotype or disorder.
+- Do not infer a specific brain region, hippocampal event, or neurological mechanism from a lyric.
+- Do not convert memory-science background into evidence that the Cybernetic God antecedent exists; lyric provenance still requires artifact evidence.
+- A schematic retrieval arrow may be used in prose or equations, but it must be labelled possible/unobserved and must never be encoded as a Lean theorem or axiom.
+
+The cognitive-mechanism reference note is `analysis/COGNITIVE_MECHANISMS.md`.
+
 ## Audio boundary
 
 The private lab has deterministic seeded synthesis properties within its implementation. The attached reference and final song MP3s identify themselves as Suno-generated. Never collapse those two provenance layers into a claim that the MP3s are deterministic lab renders.
@@ -59,7 +84,7 @@ Current permitted proof scope:
 - equality after one coordinate swap;
 - same-orbit-under-swap statements.
 
-Do not encode author reports, publication dates, search-engine findings, lyric authorship, or psychological explanations as axioms merely to obtain a theorem.
+Do not encode author reports, publication dates, search-engine findings, lyric authorship, psychological explanations, or cognitive mechanisms as axioms merely to obtain a theorem.
 
 ## Editing style
 
