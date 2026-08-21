@@ -1,15 +1,15 @@
 # SAW-1 — Spooky Action at Work
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21984110.svg)](https://doi.org/10.5281/zenodo.21984110)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22045037.svg)](https://doi.org/10.5281/zenodo.22045037)
 
 **A lightweight formalization of ETQ-101 sonification, industrial transformation, and an accidental \((3,2)\) correspondence.**
 
 **Author:** Trent Slade · QSOL-IMC  
-**Released record:** 1.0.0  
-**Current repository extension:** 1.2.1 development  
+**Released record:** 1.2.1  
+**Current repository release:** 1.2.1  
 **Primary object:** Technical note  
-**Published v1.0.0 DOI:** `10.5281/zenodo.21984110`  
-**Reserved v1.2.1 DOI:** `10.5281/zenodo.22045037` *(reserved, not yet published)*
+**Published v1.2.1 DOI:** `10.5281/zenodo.22045037`  
+**Previous v1.0.0 DOI:** `10.5281/zenodo.21984110`
 
 ## Abstract
 
@@ -153,7 +153,7 @@ The toolchain is pinned in [`lean-toolchain`](lean-toolchain), and GitHub Action
 - [`provenance/TRENT_SLADE_ZENODO_PROVENANCE.json`](provenance/TRENT_SLADE_ZENODO_PROVENANCE.json) — human creator, ORCID, roles, rights, and final accountability.
 - [`provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json`](provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json) — bounded AI-assistance disclosure and non-authorship statement.
 - [`zenodo-import/RELATED_IDENTIFIERS_NOTE.md`](zenodo-import/RELATED_IDENTIFIERS_NOTE.md) — additive copy-paste note for Zenodo related works/references.
-- [`zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json`](zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json) — reserved v1.2.1 DOI record and release gate.
+- [`zenodo-import/ZENODO_V1_2_1_PUBLISHED_RECORD.json`](zenodo-import/ZENODO_V1_2_1_PUBLISHED_RECORD.json) — published v1.2.1 DOI, release tag, commit, and citation.
 - [`zenodo-import/ZENODO_AUTHORS_CREATORS_TRENT_SLADE.json`](zenodo-import/ZENODO_AUTHORS_CREATORS_TRENT_SLADE.json) — direct Zenodo Authors/Creators importer array.
 - [`zenodo-import/ZENODO_CONTRIBUTORS_CHATGPT_GPT-5.6.json`](zenodo-import/ZENODO_CONTRIBUTORS_CHATGPT_GPT-5.6.json) — direct Zenodo Contributors importer array.
 - [`REFERENCES.md`](REFERENCES.md) — primary and contextual references.
@@ -194,10 +194,14 @@ The script decodes to mono float32 at 48 kHz, calculates fixed-window power-spec
 
 ## Citation and release state
 
-**Published v1.0.0 DOI:** https://doi.org/10.5281/zenodo.21984110  
-**Reserved v1.2.1 DOI:** https://doi.org/10.5281/zenodo.22045037 *(reserved, not yet published)*
+**Published v1.2.1 DOI:** https://doi.org/10.5281/zenodo.22045037  
+**Previous published v1.0.0 DOI:** https://doi.org/10.5281/zenodo.21984110
 
-`CITATION.cff` and `.zenodo.json` intentionally remain on the canonical published v1.0.0 metadata until the v1.2.1 release is finalized. At publication, they should be updated in the final validated release commit to v1.2.1 and DOI `10.5281/zenodo.22045037`.
+Preferred citation:
+
+> Slade, T. (2026). *SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence* (Version 1.2.1). Zenodo. https://doi.org/10.5281/zenodo.22045037
+
+`CITATION.cff` and `.zenodo.json` now identify the published v1.2.1 archival record. The v1.0.0 DOI remains valid for the earlier published version.
 
 Trent Slade is the cited human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is separately disclosed as an AI assistance system and contributor, not a human author or rights holder.
 
