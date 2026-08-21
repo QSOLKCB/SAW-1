@@ -1,7 +1,7 @@
 # SAW-1 Machine Summary
 
 ```yaml
-schema: qsol-imc-saw-1-context/4
+schema: qsol-imc-saw-1-context/5
 project:
   id: SAW-1
   title: Spooky Action at Work
@@ -71,14 +71,22 @@ creative_background:
 cognitive_mechanisms:
   preferred_umbrella: associative reconstruction with uncertain source attribution
   status: general-memory-science-background-not-case-proof
-  permitted_candidates:
-    - associative reconstruction
+  literature_backed_background:
     - implicit memory
     - source monitoring
     - source-attribution uncertainty
+    - pattern completion as bounded cue/reconstruction analogy
+  repository_defined_or_adapted_language:
+    - associative reconstruction
+    - source-uncertain self-retrieval
     - cryptomnesia-like self-retrieval
-    - pattern completion as bounded analogy
     - parallel or convergent reconstruction
+  adaptation_boundary:
+    cryptomnesia_like_self_retrieval:
+      class: qualified analogy
+      literature_establishes_self_reuse_mechanism: false
+      plagiarism_claim: false
+  additional_competing_paths:
     - generative-system contribution
     - mixed human-AI creative path
   photographic_memory:
@@ -86,10 +94,12 @@ cognitive_mechanisms:
     reason: colloquial and unnecessary for the observed short symbolic relation
   eidetic_memory:
     claimed: false
-  cryptomnesia_boundary: do not call reuse of the author's own earlier work plagiarism; qualify as cryptomnesia-like self-retrieval or use the preferred umbrella phrase
-  schematic_path: "M_2025 --A(unobserved retrieval/reconstruction)--> [2,3] --tau(theorem)--> [3,2]"
+  cryptomnesia_boundary: do not call reuse of the author's own earlier work plagiarism; `cryptomnesia-like self-retrieval` is a qualified repository analogy, not an established literature-backed self-reuse mechanism
+  schematic_path: "M_candidate --A(unobserved retrieval/reconstruction)--> [2,3] --tau(theorem)--> [3,2]"
+  candidate_state_date_verified: false
   theorem_bearing_step: "tau([2,3]) == [3,2]"
   unproved_step: "A"
+  explanatory_status: compatible-or-available-ordinary-possibilities-not-sufficient-case-explanation
   diagnosis_claim: false
   neurological_localization_claim: false
   reference_note: analysis/COGNITIVE_MECHANISMS.md
@@ -98,7 +108,7 @@ creative_intent:
   god_is_a_dj: author-reported creative influence
   quasicrystal_shocks: author reports influence from God Is a DJ
   bassline_is_law: author-reported ordinary deterministic/superdeterministic creative reading
-  parallel_human_thinking: admissible non-exotic contextual explanation for nearby motifs
+  parallel_human_thinking: available non-exotic contextual possibility for nearby motifs, not a sufficient case-level explanation
 chronology:
   paper_v2: 2026-06-25
   reference_mp3_created_utc: 2026-07-27T09:24:54.574Z
@@ -151,7 +161,9 @@ boundaries:
   - The Cybernetic God (2,3) antecedent is not transcript-verified in-repo yet.
   - Public album existence and first-party production-lineage claims must remain separate evidence classes.
   - Generic physics-language matches are discounted because physics and sonification are established creative background.
-  - Memory-science mechanisms are general explanatory possibilities, not proof of the author's mental state.
+  - Memory-science mechanisms are general explanatory possibilities, not proof of the author's mental state or sufficient explanations of a specific lyric.
+  - Repository-defined cognitive analogies must not be promoted to literature-established mechanisms.
+  - Do not attach unverified dates to candidate memory/motif states.
   - Do not diagnose photographic/eidetic memory, source-monitoring failure, amnesia, or any memory phenotype/disorder.
   - Do not encode cognitive mechanisms or semantic provenance labels as Lean axioms/constants/theorems.
   - Do not report Pettini's model as established physics.
