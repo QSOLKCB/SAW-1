@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 EXPECTED_PAPER_DATE = "2026-06-25"
 EXPECTED_DOCUMENTATION_DATE = "2026-08-18"
+EXPECTED_ZENODO_VERSION = "1.2.1"
+EXPECTED_ZENODO_PUBLICATION_DATE = "2026-08-21"
 EXPECTED_TIMESTAMPS = {
     "reference-track": "2026-07-27T09:24:54.574Z",
     "industrial-metal-god": "2026-07-27T10:15:19Z",
@@ -98,7 +100,10 @@ def main() -> None:
     project = manifest.get("project", {})
     require(project.get("id") == "SAW-1", "unexpected project ID")
     require(project.get("version") == "1.0.0", "unexpected manifest project version")
-    require(zenodo.get("version") == "1.0.0", "unexpected Zenodo version")
+    require(
+        zenodo.get("version") == EXPECTED_ZENODO_VERSION,
+        f"unexpected Zenodo version: expected {EXPECTED_ZENODO_VERSION}",
+    )
     require(
         zenodo.get("publication_type") == "technicalnote",
         "Zenodo publication_type must be technicalnote",
@@ -110,8 +115,8 @@ def main() -> None:
         EXPECTED_DOCUMENTATION_DATE,
     )
     require(
-        zenodo.get("publication_date") == EXPECTED_DOCUMENTATION_DATE,
-        "Zenodo publication_date differs from canonical documentation date",
+        zenodo.get("publication_date") == EXPECTED_ZENODO_PUBLICATION_DATE,
+        "Zenodo publication_date differs from published v1.2.1 release date",
     )
 
     artifacts = manifest.get("artifacts")
