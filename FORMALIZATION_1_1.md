@@ -17,7 +17,7 @@ The extension adds four bounded ideas:
 1. physics and sonification are high-background-rate themes in the author's music;
 2. an earlier author-reported **Cybernetic God** motif has the candidate ordered pair `(2,3)`;
 3. `(2,3)` and `(3,2)` are related exactly by the nontrivial coordinate permutation on two positions;
-4. ordinary memory and creativity mechanisms provide non-exotic explanatory classes for recurrence or transformation of earlier motifs without establishing which psychological path actually occurred.
+4. ordinary memory and creativity mechanisms provide non-exotic **explanatory possibilities** for recurrence or transformation of earlier motifs without establishing which psychological path actually occurred.
 
 The third item is machine-proved in Lean 4. The first, second, and fourth are provenance/context statements and are not encoded as mathematical axioms.
 
@@ -192,7 +192,7 @@ This is a **transposed antecedent relation**, not a second instance of the origi
 
 ## 6. Parallel and convergent human thinking
 
-The extension adopts ordinary parallel or convergent human thinking as a sufficient non-exotic explanatory class.
+The extension treats ordinary parallel or convergent human thinking as one **compatible non-exotic explanatory possibility**.
 
 A creator repeatedly working inside a stable semantic neighbourhood can revisit nearby motifs by common transformations: inversion, reversal, permutation, rhythmic displacement, transposition, rewording, or recombination. For the pair at issue, the required transformation is exceptionally small:
 
@@ -200,17 +200,17 @@ A creator repeatedly working inside a stable semantic neighbourhood can revisit 
 (2,3)\xrightarrow{\tau}(3,2).
 \]
 
-No retrocausal or paranormal information channel is required to make this transformation cognitively available.
+No retrocausal or paranormal information channel is required merely to make this transformation available as an ordinary operation.
 
-This statement is deliberately limited. SAW-1 does **not** claim to prove a psychological mechanism, unconscious memory trace, or exclusive causal source for the later lyric. It states only that ordinary creative mechanisms exist which are fully compatible with the observed pair relation.
+This statement is deliberately limited. SAW-1 does **not** claim to prove a psychological mechanism, unconscious memory trace, or exclusive causal source for the later lyric. It states only that ordinary creative mechanisms exist that are compatible with the pair relation.
 
-Formally, the evidential point is existential rather than exclusive:
+Formally, the mathematical point is existential rather than psychological:
 
 \[
 \exists\,\tau\text{ ordinary and explicit such that }\tau(2,3)=(3,2).
 \]
 
-The existence of this simple transformation weakens any need to invoke a more exotic mechanism. It does not prove which mental process actually occurred.
+The existence of this simple transformation supplies a non-exotic mathematical route between the ordered pairs. It does not establish which mental or generative process actually occurred.
 
 ## 7. Associative reconstruction and source attribution
 
@@ -238,7 +238,7 @@ where \(x'\) may remain structurally close to \(x\) while \(s'\) is weak or unce
 
 This is bookkeeping, not a fitted model of the author's brain.
 
-General memory research supplies several ordinary mechanisms compatible with this possibility:
+General memory research supplies background phenomena compatible with this possibility. SAW-1 distinguishes those literature-backed concepts from repository-defined or adapted explanatory language.
 
 ### 7.1 Implicit memory
 
@@ -266,25 +266,24 @@ The source-monitoring framework distinguishes memory for content from judgments 
 
 SAW-1 uses the neutral term **source-attribution uncertainty** rather than diagnosing a source-monitoring failure.
 
-### 7.3 Cryptomnesia-like self-retrieval
+### 7.3 Cryptomnesia literature and a qualified self-retrieval analogy
 
 Cryptomnesia is commonly studied as inadvertent plagiarism, in which previously encountered material is produced as apparently new because its source is not consciously recollected.
 
-The present candidate is importantly different: **Cybernetic God is the author's own earlier creative material**. SAW-1 therefore does not label the case plagiarism. The relevant analogy is only that content can be retrieved while its source episode is not consciously identified.
+The present candidate is importantly different: **Cybernetic God is the author's own earlier creative material**. The cited literature does not establish `cryptomnesia-like self-retrieval` as a recognized mechanism for reuse of one's own creative work. SAW-1 therefore treats that phrase only as a **qualified analogy** to source uncertainty and does not label the case plagiarism.
 
 Preferred wording is:
 
 ```text
 source-uncertain self-retrieval
-cryptomnesia-like self-retrieval
 associative reconstruction with uncertain source attribution
 ```
 
-The last is preferred.
+If `cryptomnesia-like self-retrieval` is used at all, the `-like` qualification and analogy status must remain explicit.
 
 ### 7.4 Pattern completion
 
-Memory research uses **pattern completion** for reconstruction of a stored representation from partial cues. SAW-1 borrows this only as a bounded analogy:
+Memory research uses **pattern completion** for reconstruction of a stored representation from partial cues. SAW-1 borrows this only as a bounded cue/reconstruction concept:
 
 \[
 \text{partial cue}
@@ -309,12 +308,14 @@ Let \(A\) denote activation or retrieval of a nearby remembered structure, witho
 Then a **possible**, non-exclusive ordinary path is
 
 \[
-M_{2025}
+M_{\mathrm{candidate}}
 \xrightarrow{A}
 (2,3)
 \xrightarrow{\tau}
 (3,2).
 \]
+
+`M_candidate` is intentionally undated because the repository has not independently classified and verified a date for the candidate motif state.
 
 Only the second arrow is theorem-bearing:
 
@@ -324,7 +325,7 @@ Only the second arrow is theorem-bearing:
 
 The retrieval arrow \(A\) is not proved, observed, or encoded in Lean.
 
-SAW-1 preserves several competing ordinary hypotheses:
+SAW-1 preserves several competing ordinary possibilities:
 
 1. conscious reuse;
 2. implicit reuse;
@@ -397,13 +398,15 @@ Those are intentionally outside the theorem boundary.
 | public Memory Virus album existence | external public-object evidence |
 | Memory Virus → SPECTRAL production lineage | first-party / author-reported production evidence |
 | physics/sonification-heavy creative background | first-party corpus/context evidence |
-| implicit memory / source monitoring / pattern completion | established general memory-science background, not case proof |
-| associative reconstruction with uncertain source attribution | preferred bounded explanatory umbrella |
-| cryptomnesia-like self-retrieval | qualified analogy, not a plagiarism claim |
+| implicit memory / source monitoring | established general memory-science background, not case proof |
+| pattern completion | established research concept used here only as a bounded cue/reconstruction concept, not case proof |
+| associative reconstruction with uncertain source attribution | preferred repository umbrella for a compatible possibility |
+| source-uncertain self-retrieval | repository descriptive possibility, not a literature-established case mechanism |
+| cryptomnesia-like self-retrieval | qualified analogy only; not a plagiarism claim and not literature-established self-reuse mechanism |
 | photographic/eidetic memory | not claimed and not required |
 | `His bassline is law` → determinism | authorial interpretation / analogy |
 | `God` as open semantic role | authorial-intent boundary |
-| parallel human thinking | ordinary explanatory class, not a proved psychological history |
+| parallel human thinking | compatible ordinary possibility, not a sufficient or proved psychological explanation |
 | prophecy / retrocausality / paranormal transfer | not established |
 
 ## 12. Extension conclusion
@@ -417,7 +420,7 @@ The strengthened SAW-1 position is therefore:
 &\text{the original }(3,2)\text{ equality remains exact;}\\
 &\text{an earlier reported }(2,3)\text{ motif is a candidate transposed antecedent;}\\
 &\tau(2,3)=(3,2)\text{ is formally proved;}\\
-&\text{ordinary creative and memory mechanisms are sufficient explanatory classes;}\\
+&\text{ordinary creative and memory mechanisms remain compatible explanatory possibilities;}\\
 &\text{no specific psychological history is claimed or proved.}
 \end{aligned}
 }
