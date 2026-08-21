@@ -1,19 +1,26 @@
 # SAW-1 Machine Summary
 
 ```yaml
-schema: qsol-imc-saw-1-context/5
+schema: qsol-imc-saw-1-context/6
 project:
   id: SAW-1
   title: Spooky Action at Work
   released_version: 1.0.0
-  repository_extension: 1.1.0-development
+  target_release: 1.2.1
+  repository_extension: 1.2.1-development
   author: Trent Slade
   affiliation: QSOL-IMC
   author_orcid: 0009-0002-4515-9237
   type: technical-note
-  publication_date: 2026-08-18
-  doi: 10.5281/zenodo.21984110
-  doi_url: https://doi.org/10.5281/zenodo.21984110
+  published_v1_0_0:
+    publication_date: 2026-08-18
+    doi: 10.5281/zenodo.21984110
+    doi_url: https://doi.org/10.5281/zenodo.21984110
+  reserved_v1_2_1:
+    doi: 10.5281/zenodo.22045037
+    doi_url: https://doi.org/10.5281/zenodo.22045037
+    status: reserved-not-published
+    publication_date: null
 primary_claim:
   expression: parse("Three beats to two") == signature(Pettini_3_2_model) == [3, 2]
   class: exact-numerical-semantic-correspondence
@@ -75,9 +82,9 @@ cognitive_mechanisms:
     - implicit memory
     - source monitoring
     - source-attribution uncertainty
-    - pattern completion as bounded cue/reconstruction analogy
+    - pattern completion as a research concept used only as bounded cue/reconstruction background
   repository_defined_or_adapted_language:
-    - associative reconstruction
+    - associative reconstruction with uncertain source attribution
     - source-uncertain self-retrieval
     - cryptomnesia-like self-retrieval
     - parallel or convergent reconstruction
@@ -97,6 +104,7 @@ cognitive_mechanisms:
   cryptomnesia_boundary: do not call reuse of the author's own earlier work plagiarism; `cryptomnesia-like self-retrieval` is a qualified repository analogy, not an established literature-backed self-reuse mechanism
   schematic_path: "M_candidate --A(unobserved retrieval/reconstruction)--> [2,3] --tau(theorem)--> [3,2]"
   candidate_state_date_verified: false
+  candidate_antecedent_verified: false
   theorem_bearing_step: "tau([2,3]) == [3,2]"
   unproved_step: "A"
   explanatory_status: compatible-or-available-ordinary-possibilities-not-sufficient-case-explanation
@@ -154,6 +162,13 @@ provenance_records:
   ai_assistance: provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json
   ai_is_author: false
   final_human_accountability: Trent Slade
+release_metadata:
+  related_identifiers_note: zenodo-import/RELATED_IDENTIFIERS_NOTE.md
+  copy_paste_metadata: zenodo-import/ZENODO_V1_2_1_METADATA_COPY_PASTE.txt
+  reserved_record: zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json
+  canonical_v1_0_citation_file: CITATION.cff
+  canonical_v1_0_zenodo_json: .zenodo.json
+  transition_rule: do not rewrite canonical published-v1.0 metadata to v1.2.1 until final publication/release validation
 boundaries:
   - The private source archive is not open source and must not be redistributed.
   - The supplied MP3s are generative outputs, not bitwise deterministic lab renders.
@@ -166,20 +181,25 @@ boundaries:
   - Do not attach unverified dates to candidate memory/motif states.
   - Do not diagnose photographic/eidetic memory, source-monitoring failure, amnesia, or any memory phenotype/disorder.
   - Do not encode cognitive mechanisms or semantic provenance labels as Lean axioms/constants/theorems.
+  - Coordinate swap makes the numerical transformation mathematically available; it does not prove how a lyric was produced.
   - Do not report Pettini's model as established physics.
   - Do not infer therapeutic or medical claims from receiver terminology.
   - Do not force `God` into a religious interpretation.
+  - DOI 10.5281/zenodo.22045037 is reserved for v1.2.1 and must not be described as published until the deposit is actually published.
   - ChatGPT is disclosed as an AI assistance system, not a human creator or accountable author.
 canonical_files:
   human_entry: README.md
   formal_note: FORMALIZATION.md
-  formal_extension: FORMALIZATION_1_1.md
+  formal_extension: FORMALIZATION_1_2_1.md
   creative_corpus: analysis/CREATIVE_CORPUS.md
   cognitive_mechanisms: analysis/COGNITIVE_MECHANISMS.md
   lean_swap_proof: SAW1/PairSwap.lean
   artifact_manifest: artifacts/manifest.json
   measurements: analysis/MEASUREMENTS.md
   machine_context: README4AI.md
+  related_identifiers_note: zenodo-import/RELATED_IDENTIFIERS_NOTE.md
+  release_metadata_copy_paste: zenodo-import/ZENODO_V1_2_1_METADATA_COPY_PASTE.txt
+  reserved_doi_record: zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json
   human_provenance: provenance/TRENT_SLADE_ZENODO_PROVENANCE.json
   ai_disclosure: provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json
 ```
