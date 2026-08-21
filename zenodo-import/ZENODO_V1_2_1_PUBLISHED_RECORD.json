@@ -1,0 +1,26 @@
+{
+  "schema": "qsol-imc-zenodo-published-record/1",
+  "project_id": "SAW-1",
+  "version": "1.2.1",
+  "record_status": "published",
+  "doi": "10.5281/zenodo.22045037",
+  "doi_url": "https://doi.org/10.5281/zenodo.22045037",
+  "published": true,
+  "publication_date": "2026-08-21",
+  "released_git_tag": "v1.2.1",
+  "released_commit": "829c0db54b26071daf0e0ad0c9fc33891d9acfd4",
+  "github_release_url": "https://github.com/QSOLKCB/SAW-1/releases/tag/v1.2.1",
+  "citation": "Slade, T. (2026). SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence (Version 1.2.1). Zenodo. https://doi.org/10.5281/zenodo.22045037",
+  "previous_published_version": {
+    "version": "1.0.0",
+    "doi": "10.5281/zenodo.21984110"
+  },
+  "archived_scope": [
+    "creative-corpus background-rate correction",
+    "conditional Cybernetic God (2,3) antecedent analysis",
+    "Lean 4 coordinate-swap proof",
+    "bounded cognitive-mechanism discussion",
+    "strict evidence-class and provenance boundaries"
+  ],
+  "release_boundary": "The v1.2.1 DOI identifies the published archival record. The original v1.0.0 DOI remains a valid identifier for the earlier published version."
+}
