@@ -59,12 +59,18 @@ The repository currently treats the `(2,3)` lyric antecedent as author-reported 
 
 The author identifies **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat** as the main physics-related albums relevant to the creative-background analysis. Exact-title public-search indexing was uneven at the time of the 1.1 audit, so these four names are recorded as an author-reported corpus declaration rather than as uniformly independently verified album metadata.
 
-The strongest independently recoverable album-level sonification anchor was:
+For **Memory Virus**, separate the evidence classes:
+
+1. **Public album existence/title:** the public YouTube Music playlist supplies external evidence that a public album object with that title exists.
+2. **SPECTRAL production lineage:** QSOL-authored research material states that the album was produced using SPECTRAL data-sonification material. This remains a **first-party / author-reported production claim**, not independent corroboration.
+3. **SPECTRAL capability:** the public SPECTRAL repository supplies first-party implementation evidence that the declared sonification workflows exist.
+
+Public album object:
 
 Trent Slade, **Memory Virus**, public YouTube Music playlist, 2026.  
 https://www.youtube.com/playlist?list=OLAK5uy_kXPOEhO6oUSfMgjKN6EccEH3XpzK866XQ
 
-Related public implementation and research anchors:
+Related first-party implementation and research anchors:
 
 - QSOLKCB/SPECTRAL: https://github.com/QSOLKCB/SPECTRAL
 - SPECTRAL E8 Geometry Studio: https://github.com/QSOLKCB/SPECTRAL/tree/main/E8/APP
@@ -124,7 +130,7 @@ SAW-1 borrows `pattern completion` only as a bounded cue/reconstruction analogy 
 - Pinned Lean toolchain: `leanprover/lean4:v4.30.0`
 - CI installer source: Elan commit `464c9d28395000a2a0128e07081e4956d50eced2`
 
-The Lean proof is intentionally limited to coordinate-swap algebra. It does not encode lyric provenance, memory mechanisms, psychology, historical chronology, or physical validity as axioms.
+The Lean proof is intentionally limited to explicit coordinate-swap algebra. It contains no semantic constants for Cybernetic God or Pettini and does not encode lyric provenance, memory mechanisms, psychology, historical chronology, or physical validity as axioms.
 
 ## Private source
 
