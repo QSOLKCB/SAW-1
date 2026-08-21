@@ -5,7 +5,13 @@
 Trent Slade, **“SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence,”** version 1.0.0, QSOL-IMC, 18 August 2026.  
 DOI: https://doi.org/10.5281/zenodo.21984110
 
-The DOI was reserved for the version 1.0.0 Zenodo record. The repository's 1.1 development extension is not represented as a new DOI-backed release until separately archived.
+The DOI above identifies the published v1.0.0 Zenodo record. The repository's current extension targets **v1.2.1**. DOI `10.5281/zenodo.22045037` is reserved for that future record and must not be described as published until the deposit and matching GitHub release/tag are finalized.
+
+For Zenodo copy-paste fields, see:
+
+- `zenodo-import/RELATED_IDENTIFIERS_NOTE.md`
+- `zenodo-import/ZENODO_V1_2_1_METADATA_COPY_PASTE.txt`
+- `zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json`
 
 ## Primary physics context
 
@@ -57,7 +63,7 @@ The repository currently treats the `(2,3)` lyric antecedent as author-reported 
 
 ## Physics-music and sonification background
 
-The author identifies **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat** as the main physics-related albums relevant to the creative-background analysis. Exact-title public-search indexing was uneven at the time of the 1.1 audit, so these four names are recorded as an author-reported corpus declaration rather than as uniformly independently verified album metadata.
+The author identifies **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat** as the main physics-related albums relevant to the creative-background analysis. Exact-title public-search indexing was uneven during the v1.2.1 audit, so these four names are recorded as an author-reported corpus declaration rather than as uniformly independently verified album metadata.
 
 For **Memory Virus**, separate the evidence classes:
 
@@ -90,7 +96,7 @@ The author also reports that **“His bassline is law”** is naturally rooted i
 
 ## Memory and source-monitoring background
 
-These references support only **general memory-science mechanisms** used as bounded explanatory possibilities in `analysis/COGNITIVE_MECHANISMS.md`. They are not evidence that any one mechanism occurred in the author during creation of a particular lyric.
+These references support only **general memory-science phenomena** used as bounded explanatory possibilities in `analysis/COGNITIVE_MECHANISMS.md`. They are not evidence that any one mechanism occurred in the author during creation of a particular lyric.
 
 Marcia K. Johnson, Shahin Hashtroudi, and D. Stephen Lindsay, **“Source monitoring,”** *Psychological Bulletin* 114(1) (1993), 3–28.  
 DOI: https://doi.org/10.1037/0033-2909.114.1.3  
@@ -111,7 +117,7 @@ This supports the general distinction between influence of prior experience and 
 Amanda C. Gingerich and Meaghan C. Sullivan, **“Claiming hidden memories as one's own: A review of inadvertent plagiarism,”** *Journal of Cognitive Psychology* 25(8) (2013), 903–916.  
 DOI: https://doi.org/10.1080/20445911.2013.841674
 
-The review treats cryptomnesia/inadvertent plagiarism in relation to source monitoring. SAW-1 does **not** label retrieval of the author's own prior material plagiarism; it uses `cryptomnesia-like self-retrieval` only as a qualified analogy and prefers `associative reconstruction with uncertain source attribution`.
+The review treats cryptomnesia/inadvertent plagiarism in relation to source monitoring. SAW-1 does **not** label retrieval of the author's own prior material plagiarism; `cryptomnesia-like self-retrieval` is retained only as a qualified repository analogy and is not represented as a literature-established mechanism for reuse of one's own work.
 
 C. Neil Macrae, Galen V. Bodenhausen, and Guglielmo Calvini, **“Contexts of Cryptomnesia: May the Source Be with You,”** *Social Cognition* 17(3) (1999), 273–295.  
 DOI: https://doi.org/10.1521/soco.1999.17.3.273
@@ -120,7 +126,7 @@ Edmund T. Rolls, **“The mechanisms for pattern completion and pattern separati
 DOI: https://doi.org/10.3389/fnsys.2013.00074  
 PubMed: https://pubmed.ncbi.nlm.nih.gov/24198767/
 
-SAW-1 borrows `pattern completion` only as a bounded cue/reconstruction analogy and does not infer a specific hippocampal or neurological event from a lyric.
+SAW-1 uses `pattern completion` as established research background and applies it to the lyrics only as a bounded analogy. It does not infer a specific hippocampal or neurological event from a lyric.
 
 ## Lean 4 proof environment
 
