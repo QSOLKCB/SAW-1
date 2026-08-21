@@ -84,6 +84,28 @@ Thus `(2,3)` and `(3,2)` are unequal as ordered pairs but lie in the same two-po
 
 This offers an ordinary creative explanation that does not require exotic transfer: a creator repeatedly working with nearby physics, determinism, ternary, sonification, and cybernetic motifs can revisit a familiar pair in reversed order. SAW-1 calls this **parallel or convergent human thinking**. The psychological explanation is contextual, not theorem-proved; Lean proves only the pair algebra.
 
+### Memory and reconstruction boundary
+
+SAW-1 does not use `photographic memory` as a technical explanation and does not claim that the author has eidetic or exceptional memory. The preferred umbrella phrase is:
+
+> **associative reconstruction with uncertain source attribution**
+
+Established memory research gives several ordinary mechanisms that are compatible with prior material influencing later production without requiring perfect conscious recollection of its source: **implicit memory**, **source monitoring**, qualified **cryptomnesia-like self-retrieval**, and **pattern completion**. These are background mechanisms, not a diagnosis of what happened in this case.
+
+A possible path can be represented schematically as
+
+\[
+M_{2025}
+\xrightarrow{A}
+(2,3)
+\xrightarrow{\tau}
+(3,2),
+\]
+
+where \(A\) is an unobserved retrieval/reconstruction step and only the coordinate swap \(\tau(2,3)=(3,2)\) is theorem-proved. SAW-1 explicitly preserves competing ordinary explanations including conscious reuse, implicit reuse, source-uncertain self-retrieval, associative recombination, convergent reconstruction, generative-system contribution, and mixed human–AI production.
+
+See [`analysis/COGNITIVE_MECHANISMS.md`](analysis/COGNITIVE_MECHANISMS.md) for the literature-backed terminology and evidence boundary.
+
 ### Authorial-intent boundary
 
 The author reports several ordinary creative links that help interpret the lyrics without inflating them into physics claims:
@@ -112,7 +134,9 @@ The toolchain is pinned in [`lean-toolchain`](lean-toolchain), and GitHub Action
 ## Repository map
 
 - [`FORMALIZATION.md`](FORMALIZATION.md) — original complete mathematical note and claim boundaries.
+- [`FORMALIZATION_1_1.md`](FORMALIZATION_1_1.md) — 1.1 corpus, swap, and bounded cognitive-extension note.
 - [`analysis/CREATIVE_CORPUS.md`](analysis/CREATIVE_CORPUS.md) — physics-music background rate, sonification evidence, creative-intent boundary, and `(2,3)` candidate context.
+- [`analysis/COGNITIVE_MECHANISMS.md`](analysis/COGNITIVE_MECHANISMS.md) — implicit memory, source monitoring, cryptomnesia qualification, pattern completion, and reconstruction boundary.
 - [`SAW1/PairSwap.lean`](SAW1/PairSwap.lean) — machine-checked coordinate-swap theorem.
 - [`README4AI.md`](README4AI.md) — machine-oriented summary.
 - [`AGENTS.md`](AGENTS.md) — constraints for AI agents and future edits.
