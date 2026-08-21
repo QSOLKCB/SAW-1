@@ -2,16 +2,21 @@
 
 ## SAW-1 archival record
 
-Trent Slade, **“SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence,”** version 1.0.0, QSOL-IMC, 18 August 2026.  
-DOI: https://doi.org/10.5281/zenodo.21984110
+Trent Slade, **“SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence,”** version 1.2.1, QSOL-IMC, 21 August 2026.  
+DOI: https://doi.org/10.5281/zenodo.22045037
 
-The DOI above identifies the published v1.0.0 Zenodo record. The repository's current extension targets **v1.2.1**. DOI `10.5281/zenodo.22045037` is reserved for that future record and must not be described as published until the deposit and matching GitHub release/tag are finalized.
+Preferred citation:
 
-For Zenodo copy-paste fields, see:
+Slade, T. (2026). **SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence** (Version 1.2.1). Zenodo.  
+https://doi.org/10.5281/zenodo.22045037
+
+The DOI above identifies the published v1.2.1 Zenodo record. The earlier published v1.0.0 record remains independently citable at DOI `10.5281/zenodo.21984110`.
+
+For Zenodo metadata and related-work text, see:
 
 - `zenodo-import/RELATED_IDENTIFIERS_NOTE.md`
 - `zenodo-import/ZENODO_V1_2_1_METADATA_COPY_PASTE.txt`
-- `zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json`
+- `zenodo-import/ZENODO_V1_2_1_PUBLISHED_RECORD.json`
 
 ## Primary physics context
 
