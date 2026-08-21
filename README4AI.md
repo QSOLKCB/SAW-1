@@ -1,7 +1,7 @@
 # SAW-1 Machine Summary
 
 ```yaml
-schema: qsol-imc-saw-1-context/2
+schema: qsol-imc-saw-1-context/3
 project:
   id: SAW-1
   title: Spooky Action at Work
@@ -34,6 +34,7 @@ swap_extension:
   lean_does_not_prove:
     - lyric provenance
     - psychology
+    - memory mechanism
     - authorship
     - causal independence
     - historical chronology
@@ -58,6 +59,31 @@ creative_background:
   negative_control:
     title: Sonification 2005
     status: author reports that title does not imply sonification-related lyrics or sound
+cognitive_mechanisms:
+  preferred_umbrella: associative reconstruction with uncertain source attribution
+  status: general-memory-science-background-not-case-proof
+  permitted_candidates:
+    - associative reconstruction
+    - implicit memory
+    - source monitoring
+    - source-attribution uncertainty
+    - cryptomnesia-like self-retrieval
+    - pattern completion as bounded analogy
+    - parallel or convergent reconstruction
+    - generative-system contribution
+    - mixed human-AI creative path
+  photographic_memory:
+    claimed: false
+    reason: colloquial and unnecessary for the observed short symbolic relation
+  eidetic_memory:
+    claimed: false
+  cryptomnesia_boundary: do not call reuse of the author's own earlier work plagiarism; qualify as cryptomnesia-like self-retrieval or use the preferred umbrella phrase
+  schematic_path: "M_2025 --A(unobserved retrieval/reconstruction)--> [2,3] --tau(theorem)--> [3,2]"
+  theorem_bearing_step: "tau([2,3]) == [3,2]"
+  unproved_step: "A"
+  diagnosis_claim: false
+  neurological_localization_claim: false
+  reference_note: analysis/COGNITIVE_MECHANISMS.md
 creative_intent:
   god_semantics: deliberately open to interpretation; do not force a religious or theological reading
   god_is_a_dj: author-reported creative influence
@@ -115,6 +141,9 @@ boundaries:
   - The original lyric-to-(3,2) relation is the exact SAW-1 match; other mappings are analogies or separately labelled extensions.
   - The Cybernetic God (2,3) antecedent is not transcript-verified in-repo yet.
   - Generic physics-language matches are discounted because physics and sonification are established creative background.
+  - Memory-science mechanisms are general explanatory possibilities, not proof of the author's mental state.
+  - Do not diagnose photographic/eidetic memory, source-monitoring failure, amnesia, or any memory phenotype/disorder.
+  - Do not encode cognitive mechanisms as Lean axioms.
   - Do not report Pettini's model as established physics.
   - Do not infer therapeutic or medical claims from receiver terminology.
   - Do not force `God` into a religious interpretation.
@@ -122,7 +151,9 @@ boundaries:
 canonical_files:
   human_entry: README.md
   formal_note: FORMALIZATION.md
+  formal_extension: FORMALIZATION_1_1.md
   creative_corpus: analysis/CREATIVE_CORPUS.md
+  cognitive_mechanisms: analysis/COGNITIVE_MECHANISMS.md
   lean_swap_proof: SAW1/PairSwap.lean
   artifact_manifest: artifacts/manifest.json
   measurements: analysis/MEASUREMENTS.md
