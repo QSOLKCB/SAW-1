@@ -25,6 +25,20 @@ The GitHub repository is also recorded separately in Zenodo's dedicated Reposito
 
 ---
 
+## Human-facing version-label note
+
+The contextual version labels in the reference block above are **human-supplied display labels** and are preserved as supplied. They are not mathematical inputs, evidence of a semantic correspondence, or automatic machine-readable authority for repository release state.
+
+Canonical archival state is tracked separately by the applicable Git tag/release, release-specific machine metadata, and the Zenodo deposit. Automated review must not rewrite a preserved human-facing contextual label merely because a different canonical archival version is recorded elsewhere; instead, any discrepancy should be documented as a distinction between **human-facing citation context** and **machine/archive release state**.
+
+In short:
+
+```text
+human-facing version label != theorem input != provenance proof != canonical release-state authority
+```
+
+---
+
 ## Additive v1.2.1 release note
 
 The next SAW-1 record is targeted as **v1.2.1**.
