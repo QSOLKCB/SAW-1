@@ -2,6 +2,25 @@
 
 All notable changes to SAW-1 are documented here.
 
+## [Unreleased] — 1.1 development
+
+### Added
+
+- Creative-background corpus note covering the author-reported physics-album set: **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat**.
+- Public-search audit that distinguishes independently recoverable sonification evidence from author-reported album context instead of treating sparse indexing as proof.
+- **Memory Virus** / SPECTRAL sonification lineage as a background-rate control for generic physics language.
+- Negative-control note for **Sonification 2005**: a technical-looking title is not evidence that the content instantiates the technical concept.
+- Author-reported **Cybernetic God** `(2,3)` candidate antecedent and six public video identifiers for future transcript capture.
+- Formal coordinate-swap extension `tau(a,b)=(b,a)` relating `(2,3)` and `(3,2)` while preserving their inequality as ordered pairs.
+- Lean 4 package and machine-checked proofs of coordinate swap, involution, inequality, and same-orbit-under-swap statements.
+- CI validation for the pinned Lean 4 proof environment.
+- Parallel/convergent human thinking as an ordinary non-exotic explanatory class, explicitly separated from mathematical proof.
+- Authorial-intent boundary: `God` is deliberately open to interpretation; **His bassline is law** is rooted in the author's deterministic/superdeterministic creative vocabulary; **God Is a DJ** and **Quasicrystal Shocks** are recorded as author-reported influence context.
+
+### Claim boundary
+
+The 1.1 extension does not convert author reports into theorems. Lean proves only pair algebra. The Cybernetic God `(2,3)` antecedent remains candidate evidence until transcript-level capture, and no psychological, causal, religious, retrocausal, or paranormal claim is established.
+
 ## [1.0.0] — 2026-08-18
 
 ### Added
