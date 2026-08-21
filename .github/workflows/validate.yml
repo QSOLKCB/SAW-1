@@ -30,7 +30,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          ELAN_INSTALLER_COMMIT=464c9d28395000a2a0128e07081e4956d50eced2
+          curl -fsSL "https://raw.githubusercontent.com/leanprover/elan/${ELAN_INSTALLER_COMMIT}/elan-init.sh" | sh -s -- -y --default-toolchain none
           "$HOME/.elan/bin/elan" toolchain install "$(cat lean-toolchain)"
       - name: Check Lean 4 coordinate-swap proof
         shell: bash
