@@ -2,9 +2,9 @@
 
 All notable changes to SAW-1 are documented here.
 
-## [Unreleased] — 1.1 development
+## [Unreleased] — 1.2.1 development
 
-**Reserved Zenodo DOI:** `10.5281/zenodo.22045037` — reserved for the future v1.1 record and **not yet treated as a published release**.
+**Reserved Zenodo DOI:** `10.5281/zenodo.22045037` — reserved for the future v1.2.1 record and **not yet treated as a published release**.
 
 ### Added
 
@@ -25,7 +25,7 @@ All notable changes to SAW-1 are documented here.
 
 ### Claim boundary
 
-The 1.1 extension does not convert author reports or general memory science into case-specific theorems. Lean proves only pair algebra. The Cybernetic God `(2,3)` antecedent remains candidate evidence until transcript-level capture, and no psychological diagnosis, exceptional-memory claim, causal exclusivity, religious claim, retrocausal mechanism, or paranormal transfer is established.
+The 1.2.1 extension does not convert author reports or general memory science into case-specific theorems. Lean proves only pair algebra. The Cybernetic God `(2,3)` antecedent remains candidate evidence until transcript-level capture, and no psychological diagnosis, exceptional-memory claim, causal exclusivity, religious claim, retrocausal mechanism, or paranormal transfer is established.
 
 ## [1.0.0] — 2026-08-18
 
