@@ -1,8 +1,8 @@
 {
   "upload_type": "publication",
   "publication_type": "technicalnote",
-  "publication_date": "2026-08-18",
-  "title": "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, and an Accidental (3,2) Correspondence",
+  "publication_date": "2026-08-21",
+  "title": "SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence",
   "creators": [
     {
       "name": "Slade, Trent",
@@ -17,28 +17,34 @@
       "type": "Other"
     }
   ],
-  "description": "SAW-1 documents an ETQ-101-informed generative music chain and the later recognition that the lyric ‘Three beats to two’ exactly reproduces the ordered dimensional signature (3,2) of a separately authored extra-time entanglement proposal. It distinguishes deterministic source geometry, generative audio transformation, exact numerical correspondence, interpretive analogy, unsupported causal claims, and human-versus-AI contribution boundaries.",
+  "description": "SAW-1 v1.2.1 preserves the original exact (3,2) semantic correspondence and adds a Lean 4-checked coordinate-swap formalization relating the distinct ordered pairs (2,3) and (3,2), together with creative-corpus background, bounded cognitive-mechanism discussion, and stricter provenance boundaries. The Cybernetic God (2,3) antecedent remains author-reported pending transcript-level archival verification; the formal proof establishes pair algebra only and does not prove lyric provenance, causation, psychology, or the physical validity of Pettini's proposal.",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "language": "eng",
   "keywords": [
     "sonification",
     "ETQ-101",
     "E8",
+    "coordinate swap",
+    "ordered pairs",
+    "Lean 4",
+    "formal verification",
     "industrial metal",
     "semantic correspondence",
+    "creative provenance",
+    "source monitoring",
+    "implicit memory",
     "quantum foundations",
     "extra time dimension",
-    "provenance",
-    "AI assistance disclosure",
     "Spooky Action at Work"
   ],
   "references": [
     "Marco Pettini (2026), Quantum Entanglement Beyond Kinematics: A Dynamical Hypothesis in (3,2)-Dimensional Spacetime, arXiv:2606.12457v2.",
     "Sabine Hossenfelder (2026), Spooky Action At Distance Comes from Second Time Dimension, Physicist Claims, YouTube.",
     "Trent Slade (2026), Industrial Metal God, YouTube and Spotify.",
-    "SAW-1 v1.0.0 reserved version DOI: 10.5281/zenodo.21984110."
+    "SAW-1 v1.2.1 published version DOI: 10.5281/zenodo.22045037.",
+    "Previous SAW-1 v1.0.0 version DOI: 10.5281/zenodo.21984110."
   ],
-  "notes": "The private E8 Chakra Vortexmouth Lab source archive and the two evidence MP3 files are not included in the repository deposit. Their SHA-256 hashes and bounded metadata are recorded for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material. Trent Slade is the sole human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is disclosed as an AI assistance system and contributor, not a human author or rights holder."
+  "notes": "Published SAW-1 v1.2.1 DOI: 10.5281/zenodo.22045037. The private E8 Chakra Vortexmouth Lab source archive and the two evidence MP3 files are not included in the repository deposit. Their SHA-256 hashes and bounded metadata are recorded for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material. Trent Slade is the sole human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is disclosed as an AI assistance system and contributor, not a human author or rights holder."
 }
