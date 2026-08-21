@@ -4,6 +4,8 @@ All notable changes to SAW-1 are documented here.
 
 ## [Unreleased] — 1.1 development
 
+**Reserved Zenodo DOI:** `10.5281/zenodo.22045037` — reserved for the future v1.1 record and **not yet treated as a published release**.
+
 ### Added
 
 - Creative-background corpus note covering the author-reported physics-album set: **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat**.
@@ -14,9 +16,9 @@ All notable changes to SAW-1 are documented here.
 - Formal coordinate-swap extension `tau(a,b)=(b,a)` relating `(2,3)` and `(3,2)` while preserving their inequality as ordered pairs.
 - Lean 4 package and machine-checked proofs of coordinate swap, involution, inequality, and same-orbit-under-swap statements.
 - CI validation for the pinned Lean 4 proof environment.
-- Parallel/convergent human thinking as an ordinary non-exotic explanatory class, explicitly separated from mathematical proof.
-- Literature-backed cognitive-mechanism note covering associative reconstruction, implicit memory, source monitoring, source-attribution uncertainty, qualified cryptomnesia-like self-retrieval, and pattern completion.
-- Preferred cognitive umbrella: **associative reconstruction with uncertain source attribution**.
+- Parallel/convergent human thinking as an ordinary non-exotic explanatory possibility, explicitly separated from mathematical proof.
+- Literature-backed background on **implicit memory**, **source monitoring**, and the research concept of **pattern completion**.
+- Repository-defined/adapted explanatory language kept separate from that literature-backed background, including the preferred umbrella **associative reconstruction with uncertain source attribution** and the explicitly qualified analogy `cryptomnesia-like self-retrieval`.
 - Explicit non-diagnosis boundary rejecting unsupported claims of photographic/eidetic memory, exceptional memory, source-monitoring disorder, or neurological localization.
 - Schematic mixed-path model in which the retrieval/reconstruction arrow remains unproved while only `(2,3) → (3,2)` by coordinate swap is theorem-bearing.
 - Authorial-intent boundary: `God` is deliberately open to interpretation; **His bassline is law** is rooted in the author's deterministic/superdeterministic creative vocabulary; **God Is a DJ** and **Quasicrystal Shocks** are recorded as author-reported influence context.
