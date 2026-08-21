@@ -1,0 +1,68 @@
+SAW-1 v1.2.1 — ZENODO METADATA COPY-PASTE
+
+RESOURCE TYPE
+Publication
+
+RESOURCE SUBTYPE
+Technical note
+
+TITLE
+SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence
+
+DESCRIPTION
+SAW-1 v1.2.1 extends the original Spooky Action at Work technical note while preserving its narrow evidentiary claim: the lyric phrase “Three beats to two” parses exactly as the ordered pair (3,2), matching the dimensional signature used in Marco Pettini’s separately authored 2026 (3,2)-dimensional spacetime proposal.
+
+This release adds a formally verified coordinate-swap analysis connecting the ordered pairs (2,3) and (3,2). A Lean 4 proof defines coordinate exchange tau(a,b)=(b,a), proves tau(2,3)=(3,2), tau(3,2)=(2,3), tau²=I, and proves that (2,3) and (3,2) remain distinct ordered pairs while belonging to the same two-point swap orbit. The Lean layer intentionally contains no semantic constants for songs, authors, memory states, or physics claims; it proves only explicit pair algebra.
+
+The release also adds a creative-corpus background analysis. Physics, determinism, geometry, E8, triality, cybernetics, and sonification are treated as recurring parts of Trent Slade’s declared creative environment rather than as independently surprising lyric features. Vector Equilibrium, Superdeterminism, Memory Virus, and Silicon Ziggurat are recorded as the author-reported principal physics-related album corpus. Public Memory Virus album existence is kept separate from first-party claims about its SPECTRAL production lineage, and Sonification 2005 is used as a negative-control reminder that a technical-looking title does not by itself establish technical content.
+
+An earlier Cybernetic God motif is recorded as an author-reported candidate parse of (2,3), pending transcript-level archival verification. If that candidate is later verified, the Lean-proved coordinate-swap theorem applies mathematically to the parsed pair. SAW-1 does not claim that the theorem proves lyric provenance or explains how the later lyric was produced.
+
+The release additionally documents ordinary cognitive and creative possibilities relevant to motif recurrence, including implicit-memory effects, source monitoring, source-attribution uncertainty, and pattern completion as general research background. Repository-defined language such as “associative reconstruction with uncertain source attribution” is explicitly separated from literature-established terminology. “Cryptomnesia-like self-retrieval” is treated only as a qualified analogy, not as a plagiarism claim or a literature-established mechanism for reuse of one’s own work. SAW-1 makes no diagnosis of photographic memory, eidetic memory, source-monitoring disorder, exceptional memory, or any neurological mechanism.
+
+Authorial-intent boundaries are also recorded. God Is a DJ is identified by the author as a creative influence, including on Quasicrystal Shocks; “His bassline is law” is interpreted by the author against a long-running deterministic and superdeterministic vocabulary; and the word “God” is intentionally left open to interpretation rather than being assigned a required religious or theological meaning.
+
+The overall conclusion remains deliberately conservative. SAW-1 documents a structured semantic and mathematical correspondence, a bounded creative-corpus context, and ordinary explanatory possibilities. It does not claim prophecy, retrocausality, paranormal information transfer, physical entanglement between creative artifacts, proof of a second time dimension, a reconstructed psychological history, or causal exclusivity.
+
+NOTES
+Reserved Zenodo DOI for the v1.2.1 record: 10.5281/zenodo.22045037.
+
+Status at preparation time: reserved, not yet published. Do not describe DOI 10.5281/zenodo.22045037 as a published SAW-1 release until the Zenodo deposit is published and the corresponding GitHub v1.2.1 tag/release is finalized.
+
+The previously published SAW-1 v1.0.0 record remains associated with DOI 10.5281/zenodo.21984110. Existing v1.0.x related-work and contextual-reference text is intentionally preserved separately in zenodo-import/RELATED_IDENTIFIERS_NOTE.md and should be supplemented rather than rewritten.
+
+The private E8 Chakra Vortexmouth Lab source archive and evidence audio files are not included in the repository deposit. Their hashes and bounded metadata are retained for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material.
+
+Trent Slade / QSOL-IMC is the human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is disclosed separately as an AI assistance system and contributor, not as a human author, rights holder, or independently accountable research subject.
+
+KEYWORDS
+sonification
+ETQ-101
+E8
+coordinate swap
+ordered pairs
+(2,3)
+(3,2)
+Lean 4
+formal verification
+semantic correspondence
+creative provenance
+music provenance
+industrial metal
+Cybernetic God
+Industrial Metal God
+physics-inspired music
+superdeterminism
+determinism
+triality
+source monitoring
+implicit memory
+pattern completion
+associative reconstruction
+source attribution
+human-AI creativity
+quantum foundations
+extra time dimension
+Marco Pettini
+Spooky Action at Work
+QSOL-IMC
