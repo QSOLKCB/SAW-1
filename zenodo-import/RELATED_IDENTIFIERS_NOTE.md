@@ -39,18 +39,25 @@ human-facing version label != theorem input != provenance proof != canonical rel
 
 ---
 
-## Additive v1.2.1 release note
+## Additive v1.2.1 published record
 
-The next SAW-1 record is targeted as **v1.2.1**.
+SAW-1 **v1.2.1** is published.
 
-Reserved Zenodo DOI:
+Published Zenodo DOI:
 `10.5281/zenodo.22045037`
 
-Reserved DOI URL:
+DOI URL:
 https://doi.org/10.5281/zenodo.22045037
 
-Status: **reserved, not yet published**.
+GitHub release:
+https://github.com/QSOLKCB/SAW-1/releases/tag/v1.2.1
 
-This reserved record is intended to archive the v1.2.1 extension covering the creative-corpus background-rate analysis, the conditional Cybernetic God `(2,3)` antecedent analysis, the Lean 4 coordinate-swap proof, and the bounded cognitive-mechanism discussion.
+Status: **published**.
 
-The existing v1.0.x contextual material above is intentionally preserved rather than rewritten. The v1.2.1 DOI should be described as a released/published record only after the Zenodo deposit is published and the corresponding GitHub `v1.2.1` release/tag is finalized.
+Preferred citation:
+
+Slade, T. (2026). SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence (Version 1.2.1). Zenodo. https://doi.org/10.5281/zenodo.22045037
+
+This published record archives the v1.2.1 extension covering the creative-corpus background-rate analysis, the conditional Cybernetic God `(2,3)` antecedent analysis, the Lean 4 coordinate-swap proof, and the bounded cognitive-mechanism discussion.
+
+The existing v1.0.x contextual material above remains intentionally preserved rather than rewritten. The earlier published SAW-1 v1.0.0 Zenodo record remains independently citable at DOI `10.5281/zenodo.21984110`.
