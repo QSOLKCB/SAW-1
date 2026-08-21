@@ -26,5 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install elan and pinned Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          "$HOME/.elan/bin/elan" toolchain install "$(cat lean-toolchain)"
       - name: Check Lean 4 coordinate-swap proof
-        uses: leanprover/lean-action@v1.5.0
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$HOME/.elan/bin/lake" build
