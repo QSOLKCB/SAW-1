@@ -1,7 +1,7 @@
 # SAW-1 Machine Summary
 
 ```yaml
-schema: qsol-imc-saw-1-context/3
+schema: qsol-imc-saw-1-context/4
 project:
   id: SAW-1
   title: Spooky Action at Work
@@ -30,7 +30,8 @@ swap_extension:
   cybernetic_god_2_3_status: author-reported-candidate-pending-transcript-capture
   pettini_3_2_status: primary-source-verified
   lean_proof: SAW1/PairSwap.lean
-  lean_scope: pair-algebra-only
+  lean_scope: explicit-pair-algebra-only
+  semantic_labels_in_lean: false
   lean_does_not_prove:
     - lyric provenance
     - psychology
@@ -44,10 +45,18 @@ creative_background:
     - Superdeterminism
     - Memory Virus
     - Silicon Ziggurat
-  independently_corroborated_sonification_album:
-    - Memory Virus
-  public_sonification_system:
+  public_album_existence_evidence:
+    Memory Virus:
+      source: public YouTube Music playlist
+      scope: corroborates public album object/title only
+  author_reported_sonification_lineage:
+    Memory Virus:
+      claim: produced using SPECTRAL data-sonification material
+      evidence_class: first-party QSOL research/documentation
+      independently_verified: false
+  public_first_party_sonification_system:
     repository: https://github.com/QSOLKCB/SPECTRAL
+    evidence_class: first-party public implementation
     includes:
       - E8 sonification
       - qutrit and ternary mappings
@@ -55,7 +64,7 @@ creative_background:
       - deterministic and replay-safe rendering
       - astronomical sonification
       - mathematical and computational sonification
-  interpretation_rule: generic physics overlap has low evidentiary weight because it is high-background-rate material in the author's corpus
+  interpretation_rule: generic physics overlap has low evidentiary weight because it is high-background-rate material in the author's declared and publicly documented corpus
   negative_control:
     title: Sonification 2005
     status: author reports that title does not imply sonification-related lyrics or sound
@@ -140,10 +149,11 @@ boundaries:
   - The supplied MP3s are generative outputs, not bitwise deterministic lab renders.
   - The original lyric-to-(3,2) relation is the exact SAW-1 match; other mappings are analogies or separately labelled extensions.
   - The Cybernetic God (2,3) antecedent is not transcript-verified in-repo yet.
+  - Public album existence and first-party production-lineage claims must remain separate evidence classes.
   - Generic physics-language matches are discounted because physics and sonification are established creative background.
   - Memory-science mechanisms are general explanatory possibilities, not proof of the author's mental state.
   - Do not diagnose photographic/eidetic memory, source-monitoring failure, amnesia, or any memory phenotype/disorder.
-  - Do not encode cognitive mechanisms as Lean axioms.
+  - Do not encode cognitive mechanisms or semantic provenance labels as Lean axioms/constants/theorems.
   - Do not report Pettini's model as established physics.
   - Do not infer therapeutic or medical claims from receiver terminology.
   - Do not force `God` into a religious interpretation.
