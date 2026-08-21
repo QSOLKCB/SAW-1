@@ -21,3 +21,20 @@ jobs:
         run: python -O scripts/validate_metadata.py
       - name: Compile Python utilities
         run: python -m py_compile scripts/validate_metadata.py analysis/audio_probe.py
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan and pinned Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          ELAN_INSTALLER_COMMIT=464c9d28395000a2a0128e07081e4956d50eced2
+          curl -fsSL "https://raw.githubusercontent.com/leanprover/elan/${ELAN_INSTALLER_COMMIT}/elan-init.sh" | sh -s -- -y --default-toolchain none
+          "$HOME/.elan/bin/elan" toolchain install "$(cat lean-toolchain)"
+      - name: Check Lean 4 coordinate-swap proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$HOME/.elan/bin/lake" build
