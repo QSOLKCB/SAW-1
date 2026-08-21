@@ -6,9 +6,10 @@
 
 **Author:** Trent Slade · QSOL-IMC  
 **Released record:** 1.0.0  
-**Current repository extension:** 1.1.0 development  
+**Current repository extension:** 1.2.1 development  
 **Primary object:** Technical note  
-**Zenodo DOI:** `10.5281/zenodo.21984110`
+**Published v1.0.0 DOI:** `10.5281/zenodo.21984110`  
+**Reserved v1.2.1 DOI:** `10.5281/zenodo.22045037` *(reserved, not yet published)*
 
 ## Abstract
 
@@ -58,7 +59,7 @@ This is a **documented semantic coincidence**, not evidence of prophecy, retroca
 
 The paper predates the music. SAW-1 formalizes the **later recognition** of the correspondence.
 
-## 1.1 extension: creative background and the `(2,3) ↔ (3,2)` swap
+## 1.2.1 extension: creative background and the `(2,3) ↔ (3,2)` swap
 
 The wider creative corpus matters because it supplies a realistic baseline. Trent Slade identifies **Vector Equilibrium**, **Superdeterminism**, **Memory Virus**, and **Silicon Ziggurat** as the main physics-related albums relevant to the comparison. Public search indexing is uneven, so SAW-1 does not pretend that every album claim is independently web-verified.
 
@@ -140,7 +141,7 @@ The toolchain is pinned in [`lean-toolchain`](lean-toolchain), and GitHub Action
 ## Repository map
 
 - [`FORMALIZATION.md`](FORMALIZATION.md) — original complete mathematical note and claim boundaries.
-- [`FORMALIZATION_1_1.md`](FORMALIZATION_1_1.md) — 1.1 corpus, swap, and bounded cognitive-extension note.
+- [`FORMALIZATION_1_2_1.md`](FORMALIZATION_1_2_1.md) — v1.2.1 corpus, swap, and bounded cognitive-extension note.
 - [`analysis/CREATIVE_CORPUS.md`](analysis/CREATIVE_CORPUS.md) — physics-music background rate, sonification evidence, creative-intent boundary, and `(2,3)` candidate context.
 - [`analysis/COGNITIVE_MECHANISMS.md`](analysis/COGNITIVE_MECHANISMS.md) — implicit memory, source monitoring, cryptomnesia qualification, pattern completion, and reconstruction boundary.
 - [`SAW1/PairSwap.lean`](SAW1/PairSwap.lean) — machine-checked coordinate-swap theorem.
@@ -151,6 +152,8 @@ The toolchain is pinned in [`lean-toolchain`](lean-toolchain), and GitHub Action
 - [`analysis/MEASUREMENTS.md`](analysis/MEASUREMENTS.md) — measured audio observations.
 - [`provenance/TRENT_SLADE_ZENODO_PROVENANCE.json`](provenance/TRENT_SLADE_ZENODO_PROVENANCE.json) — human creator, ORCID, roles, rights, and final accountability.
 - [`provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json`](provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json) — bounded AI-assistance disclosure and non-authorship statement.
+- [`zenodo-import/RELATED_IDENTIFIERS_NOTE.md`](zenodo-import/RELATED_IDENTIFIERS_NOTE.md) — additive copy-paste note for Zenodo related works/references.
+- [`zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json`](zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json) — reserved v1.2.1 DOI record and release gate.
 - [`zenodo-import/ZENODO_AUTHORS_CREATORS_TRENT_SLADE.json`](zenodo-import/ZENODO_AUTHORS_CREATORS_TRENT_SLADE.json) — direct Zenodo Authors/Creators importer array.
 - [`zenodo-import/ZENODO_CONTRIBUTORS_CHATGPT_GPT-5.6.json`](zenodo-import/ZENODO_CONTRIBUTORS_CHATGPT_GPT-5.6.json) — direct Zenodo Contributors importer array.
 - [`REFERENCES.md`](REFERENCES.md) — primary and contextual references.
@@ -189,11 +192,12 @@ The script decodes to mono float32 at 48 kHz, calculates fixed-window power-spec
 - **Memory Virus — YouTube Music playlist:** https://www.youtube.com/playlist?list=OLAK5uy_kXPOEhO6oUSfMgjKN6EccEH3XpzK866XQ
 - **SPECTRAL sonification repository:** https://github.com/QSOLKCB/SPECTRAL
 
-## Citation
+## Citation and release state
 
-**Version DOI:** https://doi.org/10.5281/zenodo.21984110
+**Published v1.0.0 DOI:** https://doi.org/10.5281/zenodo.21984110  
+**Reserved v1.2.1 DOI:** https://doi.org/10.5281/zenodo.22045037 *(reserved, not yet published)*
 
-The DOI was reserved for the SAW-1 v1.0.0 Zenodo record. The 1.1 repository extension should receive a new versioned archival record if released. See [`CITATION.cff`](CITATION.cff) for the current preferred technical-note citation and repository-software metadata.
+`CITATION.cff` and `.zenodo.json` intentionally remain on the canonical published v1.0.0 metadata until the v1.2.1 release is finalized. At publication, they should be updated in the final validated release commit to v1.2.1 and DOI `10.5281/zenodo.22045037`.
 
 Trent Slade is the cited human creator and accountable author. OpenAI ChatGPT (GPT-5.6 Sol) is separately disclosed as an AI assistance system and contributor, not a human author or rights holder.
 
