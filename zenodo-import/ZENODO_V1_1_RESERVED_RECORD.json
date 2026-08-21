@@ -1,0 +1,25 @@
+{
+  "schema": "qsol-imc-zenodo-reserved-record/1",
+  "project_id": "SAW-1",
+  "target_version": "1.1.0",
+  "record_status": "reserved-not-published",
+  "reserved_doi": "10.5281/zenodo.22045037",
+  "reserved_doi_url": "https://doi.org/10.5281/zenodo.22045037",
+  "published": false,
+  "publication_date": null,
+  "released_git_tag": null,
+  "released_commit": null,
+  "current_published_version": {
+    "version": "1.0.0",
+    "doi": "10.5281/zenodo.21984110"
+  },
+  "intended_scope": [
+    "creative-corpus background-rate correction",
+    "conditional Cybernetic God (2,3) antecedent analysis",
+    "Lean 4 coordinate-swap proof",
+    "bounded cognitive-mechanism discussion",
+    "strict evidence-class and provenance boundaries"
+  ],
+  "release_gate": "Do not describe 10.5281/zenodo.22045037 as a published or released SAW-1 record until the Zenodo deposit is published and the corresponding GitHub release/tag is finalized.",
+  "metadata_transition": "At v1.1 publication, update CITATION.cff and .zenodo.json from the canonical v1.0.0 metadata to v1.1.0 metadata only after final validation."
+}
