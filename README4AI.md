@@ -1,26 +1,27 @@
 # SAW-1 Machine Summary
 
 ```yaml
-schema: qsol-imc-saw-1-context/6
+schema: qsol-imc-saw-1-context/7
 project:
   id: SAW-1
   title: Spooky Action at Work
-  released_version: 1.0.0
-  target_release: 1.2.1
-  repository_extension: 1.2.1-development
+  released_version: 1.2.1
+  release_status: published
   author: Trent Slade
   affiliation: QSOL-IMC
   author_orcid: 0009-0002-4515-9237
   type: technical-note
-  published_v1_0_0:
+  published_v1_2_1:
+    publication_date: 2026-08-21
+    doi: 10.5281/zenodo.22045037
+    doi_url: https://doi.org/10.5281/zenodo.22045037
+    github_tag: v1.2.1
+    github_release: https://github.com/QSOLKCB/SAW-1/releases/tag/v1.2.1
+    released_commit: 829c0db54b26071daf0e0ad0c9fc33891d9acfd4
+  previous_published_v1_0_0:
     publication_date: 2026-08-18
     doi: 10.5281/zenodo.21984110
     doi_url: https://doi.org/10.5281/zenodo.21984110
-  reserved_v1_2_1:
-    doi: 10.5281/zenodo.22045037
-    doi_url: https://doi.org/10.5281/zenodo.22045037
-    status: reserved-not-published
-    publication_date: null
 primary_claim:
   expression: parse("Three beats to two") == signature(Pettini_3_2_model) == [3, 2]
   class: exact-numerical-semantic-correspondence
@@ -122,6 +123,7 @@ chronology:
   reference_mp3_created_utc: 2026-07-27T09:24:54.574Z
   song_mp3_created_utc: 2026-07-27T10:15:19Z
   correspondence_documented: 2026-08-18
+  v1_2_1_published: 2026-08-21
   reference_to_song_seconds: 3024.426
 artifacts:
   private_lab_archive:
@@ -165,10 +167,10 @@ provenance_records:
 release_metadata:
   related_identifiers_note: zenodo-import/RELATED_IDENTIFIERS_NOTE.md
   copy_paste_metadata: zenodo-import/ZENODO_V1_2_1_METADATA_COPY_PASTE.txt
-  reserved_record: zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json
-  canonical_v1_0_citation_file: CITATION.cff
-  canonical_v1_0_zenodo_json: .zenodo.json
-  transition_rule: do not rewrite canonical published-v1.0 metadata to v1.2.1 until final publication/release validation
+  published_record: zenodo-import/ZENODO_V1_2_1_PUBLISHED_RECORD.json
+  citation_file: CITATION.cff
+  zenodo_json: .zenodo.json
+  canonical_release_state: v1.2.1-published
 boundaries:
   - The private source archive is not open source and must not be redistributed.
   - The supplied MP3s are generative outputs, not bitwise deterministic lab renders.
@@ -185,7 +187,8 @@ boundaries:
   - Do not report Pettini's model as established physics.
   - Do not infer therapeutic or medical claims from receiver terminology.
   - Do not force `God` into a religious interpretation.
-  - DOI 10.5281/zenodo.22045037 is reserved for v1.2.1 and must not be described as published until the deposit is actually published.
+  - DOI 10.5281/zenodo.22045037 identifies the published SAW-1 v1.2.1 archival record.
+  - DOI 10.5281/zenodo.21984110 remains the published identifier for the earlier v1.0.0 record.
   - ChatGPT is disclosed as an AI assistance system, not a human creator or accountable author.
 canonical_files:
   human_entry: README.md
@@ -199,7 +202,7 @@ canonical_files:
   machine_context: README4AI.md
   related_identifiers_note: zenodo-import/RELATED_IDENTIFIERS_NOTE.md
   release_metadata_copy_paste: zenodo-import/ZENODO_V1_2_1_METADATA_COPY_PASTE.txt
-  reserved_doi_record: zenodo-import/ZENODO_V1_2_1_RESERVED_RECORD.json
+  published_doi_record: zenodo-import/ZENODO_V1_2_1_PUBLISHED_RECORD.json
   human_provenance: provenance/TRENT_SLADE_ZENODO_PROVENANCE.json
   ai_disclosure: provenance/CHATGPT_GPT-5.6_AI_DISCLOSURE.json
 ```

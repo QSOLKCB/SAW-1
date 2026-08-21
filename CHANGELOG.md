@@ -2,9 +2,9 @@
 
 All notable changes to SAW-1 are documented here.
 
-## [Unreleased] — 1.2.1 development
+## [1.2.1] — 2026-08-21
 
-**Reserved Zenodo DOI:** `10.5281/zenodo.22045037` — reserved for the future v1.2.1 record and **not yet treated as a published release**.
+**Published Zenodo DOI:** `10.5281/zenodo.22045037`
 
 ### Added
 
@@ -22,6 +22,7 @@ All notable changes to SAW-1 are documented here.
 - Explicit non-diagnosis boundary rejecting unsupported claims of photographic/eidetic memory, exceptional memory, source-monitoring disorder, or neurological localization.
 - Schematic mixed-path model in which the retrieval/reconstruction arrow remains unproved while only `(2,3) → (3,2)` by coordinate swap is theorem-bearing.
 - Authorial-intent boundary: `God` is deliberately open to interpretation; **His bassline is law** is rooted in the author's deterministic/superdeterministic creative vocabulary; **God Is a DJ** and **Quasicrystal Shocks** are recorded as author-reported influence context.
+- Published-record metadata for DOI `10.5281/zenodo.22045037`, GitHub tag `v1.2.1`, and release commit `829c0db54b26071daf0e0ad0c9fc33891d9acfd4`.
 
 ### Claim boundary
 

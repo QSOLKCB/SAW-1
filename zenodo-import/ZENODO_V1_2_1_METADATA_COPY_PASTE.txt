@@ -25,11 +25,14 @@ Authorial-intent boundaries are also recorded. God Is a DJ is identified by the 
 The overall conclusion remains deliberately conservative. SAW-1 documents a structured semantic and mathematical correspondence, a bounded creative-corpus context, and ordinary explanatory possibilities. It does not claim prophecy, retrocausality, paranormal information transfer, physical entanglement between creative artifacts, proof of a second time dimension, a reconstructed psychological history, or causal exclusivity.
 
 NOTES
-Reserved Zenodo DOI for the v1.2.1 record: 10.5281/zenodo.22045037.
+Published Zenodo DOI for the v1.2.1 record: 10.5281/zenodo.22045037.
 
-Status at preparation time: reserved, not yet published. Do not describe DOI 10.5281/zenodo.22045037 as a published SAW-1 release until the Zenodo deposit is published and the corresponding GitHub v1.2.1 tag/release is finalized.
+Publication status: published. GitHub release: https://github.com/QSOLKCB/SAW-1/releases/tag/v1.2.1
 
-The previously published SAW-1 v1.0.0 record remains associated with DOI 10.5281/zenodo.21984110. Existing v1.0.x related-work and contextual-reference text is intentionally preserved separately in zenodo-import/RELATED_IDENTIFIERS_NOTE.md and should be supplemented rather than rewritten.
+Preferred citation:
+Slade, T. (2026). SAW-1 — Spooky Action at Work: A Lightweight Formalization of ETQ-101 Sonification, Industrial Transformation, Coordinate-Swap Symmetry, and an Accidental (3,2) Correspondence (Version 1.2.1). Zenodo. https://doi.org/10.5281/zenodo.22045037
+
+The previously published SAW-1 v1.0.0 record remains associated with DOI 10.5281/zenodo.21984110. Existing v1.0.x related-work and contextual-reference text is intentionally preserved separately in zenodo-import/RELATED_IDENTIFIERS_NOTE.md.
 
 The private E8 Chakra Vortexmouth Lab source archive and evidence audio files are not included in the repository deposit. Their hashes and bounded metadata are retained for provenance. The CC BY 4.0 licence applies to the SAW-1 technical note and repository metadata, not to excluded recordings, full lyrics, private source code, or third-party material.
 
